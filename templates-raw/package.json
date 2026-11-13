@@ -1,0 +1,42 @@
+{
+  "name": "templates-raw",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@10.30.2",
+  "description": "裸 OpenAI SDK 实现 agent 的教学示例，对照 mastra/templates 的场景",
+  "scripts": {
+    "agent-loop": "tsx 01-agent-loop/index.ts",
+    "sessions": "tsx 02-sessions/index.ts",
+    "memory": "tsx 03-memory/index.ts",
+    "hitl": "tsx 04-hitl/index.ts",
+    "harness": "tsx 05-harness/index.ts",
+    "full-agent": "tsx 06-full-agent/index.ts",
+    "multi-agent": "tsx 07-multi-agent/index.ts",
+    "parallel-agents": "tsx 08-multi-agent/index.ts",
+    "file-memory": "tsx 09-memory/index.ts",
+    "streaming": "tsx 10-streaming/index.ts",
+    "evals": "tsx 11-evals/index.ts",
+    "rag": "tsx 12-rag/index.ts",
+    "context-window": "tsx 13-context-window/index.ts",
+    "compaction": "tsx 14-memory/index.ts",
+    "skills": "tsx 15-skills/index.ts",
+    "mcp": "tsx 16-mcp/index.ts",
+    "pgvector": "tsx 17-pgvector/index.ts",
+    "mem0": "tsx 19-mem0/index.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "js-tiktoken": "^1.0.21",
+    "mem0ai": "^3.3.1",
+    "openai": "^6.0.0",
+    "pg": "^8.23.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pg": "^8.23.1",
+    "tsx": "^4.23.1",
+    "typescript": "^5.7.0"
+  }
+}

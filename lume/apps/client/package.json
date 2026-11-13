@@ -1,0 +1,7 @@
+{
+  "name": "@lume/client",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Lume Electron shell (placeholder, implemented in a later phase)"
+}

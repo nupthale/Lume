@@ -1,0 +1,7 @@
+{
+  "name": "@lume/web",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Lume web frontend (placeholder, implemented in a later phase)"
+}

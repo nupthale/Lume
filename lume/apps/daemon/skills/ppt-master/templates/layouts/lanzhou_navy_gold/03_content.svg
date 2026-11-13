@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <!-- ==================== 背景层 ==================== -->
+    <rect x="0" y="0" width="1280" height="720" fill="#F6F8FC"/>
+
+    <!-- ==================== 页眉：眉题 + 大标题 ==================== -->
+    <rect x="49" y="64" width="12" height="12" fill="#C9A227"/>
+    <text x="75" y="76" fill="#C9A227" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="15" font-weight="bold">{{SECTION_NAME}}</text>
+    <text x="48" y="127" fill="#1E2761" font-family="Songti SC, STSong, serif" font-size="36" font-weight="bold">{{PAGE_TITLE}}</text>
+
+    <!-- ==================== 内容区（AI 自由布局） ==================== -->
+    <rect x="48" y="149" width="1181" height="432" rx="12" fill="#FFFFFF"/>
+    <text x="640" y="372" text-anchor="middle" fill="#9AA3B5" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="16">{{CONTENT_AREA}}</text>
+
+    <!-- ==================== 洞察条（核心观点） ==================== -->
+    <rect x="48" y="600" width="1181" height="65" rx="10" fill="#EDF2FC" stroke="#D9E1F2" stroke-width="1"/>
+    <rect x="73" y="626" width="13" height="13" fill="#C9A227"/>
+    <text x="101" y="640" fill="#C9A227" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17" font-weight="bold">洞察</text>
+    <text x="152" y="640" fill="#1E2761" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="17">{{KEY_MESSAGE}}</text>
+
+    <!-- ==================== 页脚 ==================== -->
+    <text x="48" y="687" fill="#9AA3B5" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11">{{FOOTER_BRAND}}</text>
+    <text x="1232" y="687" text-anchor="end" fill="#9AA3B5" font-family="PingFang SC, Microsoft YaHei, sans-serif" font-size="11">{{PAGE_NUM}}</text>
+</svg>

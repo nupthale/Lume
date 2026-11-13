@@ -1,0 +1,1 @@
+[session_id: 6366147c00ac36e69b989986 | topic_summary_time: 2026-10-28 14:22:35]一位开发者询问了在实际项目中如何选择使用 `satisfies` 和 `as`，并了解了它们的核心区别和适用场景；接着进一步获取了 TypeScript 编译选项 `strict` 和 `noUncheckedIndexedAccess` 的使用建议及其适用场景。

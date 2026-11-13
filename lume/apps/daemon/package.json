@@ -1,0 +1,33 @@
+{
+  "name": "@lume/daemon",
+  "version": "0.1.0",
+  "description": "Lume agent daemon: harness core, agent loop, and CLI entrypoint",
+  "type": "module",
+  "bin": {
+    "lume": "./dist/index.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx --env-file=.env src/index.ts",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@lume/protocol": "workspace:*",
+    "better-sqlite3": "^12.11.1",
+    "openai": "^4.77.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.8"
+  }
+}
