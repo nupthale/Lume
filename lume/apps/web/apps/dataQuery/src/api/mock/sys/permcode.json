@@ -1,0 +1,57 @@
+{
+    "GET /data-query-api/sys/permission/getPermCode": {
+        "success": true,
+        "message": "",
+        "code": 200,
+        "result": {
+            "allAuth": [
+                {
+                    "action": "user:add",
+                    "describe": "添加按钮",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:edit",
+                    "describe": "用户编辑",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:sex",
+                    "describe": "表单性别可见",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:form:birthday",
+                    "describe": "禁用生日字段",
+                    "type": "2",
+                    "status": "1"
+                },
+                {
+                    "action": null,
+                    "describe": "保存测试",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "mtcms:search",
+                    "describe": "权限-证券搜索",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:form:phone",
+                    "describe": "手机号禁用",
+                    "type": "2",
+                    "status": "1"
+                }
+            ],
+            "auth": [],
+            "codeList": [],
+            "sysSafeMode": false
+        },
+        "timestamp": 1706505325233
+    }
+}

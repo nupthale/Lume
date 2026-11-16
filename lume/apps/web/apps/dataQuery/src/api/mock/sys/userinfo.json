@@ -1,0 +1,3821 @@
+{
+    "GET /data-query-api/sys/user/getUserInfo": {
+        "success": true,
+        "message": "",
+        "code": 200,
+        "result": {
+            "userInfo": {
+                "id": "1736919878205243393",
+                "username": "hale",
+                "realname": "哈乐",
+                "userType": 1,
+                "status": 1,
+                "maxSessionNum": 10,
+                "avatar": null,
+                "birthday": null,
+                "sex": 1,
+                "email": "hale@stocke.com.cn",
+                "phone": null,
+                "orgCode": "1019",
+                "orgCodeTxt": null,
+                "delFlag": 0,
+                "activitiSync": null,
+                "workNo": null,
+                "post": "",
+                "telephone": null,
+                "createBy": "admin",
+                "createTime": "2023-12-19 09:22:24",
+                "updateBy": "hale",
+                "updateTime": "2024-01-24 15:41:01",
+                "userIdentity": null,
+                "departIds": "",
+                "relTenantIds": null,
+                "clientId": null,
+                "passwordUpdateTime": null
+            },
+            "sysAllDictItems": {
+                "Z_SHARE_PLEDGE_NOTICE.STATUS": [
+                    {
+                        "value": "0",
+                        "text": "未下发",
+                        "label": "未下发",
+                        "title": "未下发"
+                    },
+                    {
+                        "value": "1",
+                        "text": "已下发",
+                        "label": "已下发",
+                        "title": "已下发"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已反馈",
+                        "label": "已反馈",
+                        "title": "已反馈"
+                    },
+                    {
+                        "value": "3",
+                        "text": "已撤销",
+                        "label": "已撤销",
+                        "title": "已撤销"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RISK.CLIENT_HOLDER_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "无减持限制的股东身份",
+                        "label": "无减持限制的股东身份",
+                        "title": "无减持限制的股东身份"
+                    },
+                    {
+                        "value": "2",
+                        "text": "控股股东",
+                        "label": "控股股东",
+                        "title": "控股股东"
+                    },
+                    {
+                        "value": "3",
+                        "text": "控股股东一致行动人",
+                        "label": "控股股东一致行动人",
+                        "title": "控股股东一致行动人"
+                    },
+                    {
+                        "value": "4",
+                        "text": "实际控制人",
+                        "label": "实际控制人",
+                        "title": "实际控制人"
+                    },
+                    {
+                        "value": "5",
+                        "text": "实控人一致行动人",
+                        "label": "实控人一致行动人",
+                        "title": "实控人一致行动人"
+                    },
+                    {
+                        "value": "6",
+                        "text": "持股5%以上股东",
+                        "label": "持股5%以上股东",
+                        "title": "持股5%以上股东"
+                    },
+                    {
+                        "value": "7",
+                        "text": "持股5%以上一致行动人",
+                        "label": "持股5%以上一致行动人",
+                        "title": "持股5%以上一致行动人"
+                    },
+                    {
+                        "value": "8",
+                        "text": "不确定类型",
+                        "label": "不确定类型",
+                        "title": "不确定类型"
+                    },
+                    {
+                        "value": "9",
+                        "text": "其他受到限制的股东身份",
+                        "label": "其他受到限制的股东身份",
+                        "title": "其他受到限制的股东身份"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_SPECIAL_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户资产负债等无明显风险提升",
+                        "label": "客户资产负债等无明显风险提升",
+                        "title": "客户资产负债等无明显风险提升"
+                    },
+                    {
+                        "value": "2",
+                        "text": "客户资产负债存在一定风险(需在专员意见中填写说明)",
+                        "label": "客户资产负债存在一定风险(需在专员意见中填写说明)",
+                        "title": "客户资产负债存在一定风险(需在专员意见中填写说明)"
+                    },
+                    {
+                        "value": "3",
+                        "text": "其他意见(需在专员意见中填写说明)，未取得有效联系",
+                        "label": "其他意见(需在专员意见中填写说明)，未取得有效联系",
+                        "title": "其他意见(需在专员意见中填写说明)，未取得有效联系"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_ACCOUNT_PAYOFF.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "违约前后，客户拒绝接受联系或者无法联系，态度恶劣，需要授信额度下调（调0或者微调）",
+                        "label": "违约前后，客户拒绝接受联系或者无法联系，态度恶劣，需要授信额度下调（调0或者微调）",
+                        "title": "违约前后，客户拒绝接受联系或者无法联系，态度恶劣，需要授信额度下调（调0或者微调）"
+                    },
+                    {
+                        "value": "2",
+                        "text": "违约前后，客户积极保持沟通，存在主动转入资金等配合平仓情况（不调）",
+                        "label": "违约前后，客户积极保持沟通，存在主动转入资金等配合平仓情况（不调）",
+                        "title": "违约前后，客户积极保持沟通，存在主动转入资金等配合平仓情况（不调）"
+                    }
+                ],
+                "position_rank": [
+                    {
+                        "value": "1",
+                        "text": "员级",
+                        "label": "员级",
+                        "title": "员级"
+                    },
+                    {
+                        "value": "2",
+                        "text": "助级",
+                        "label": "助级",
+                        "title": "助级"
+                    },
+                    {
+                        "value": "3",
+                        "text": "中级",
+                        "label": "中级",
+                        "title": "中级"
+                    },
+                    {
+                        "value": "4",
+                        "text": "副高级",
+                        "label": "副高级",
+                        "title": "副高级"
+                    },
+                    {
+                        "value": "5",
+                        "text": "正高级",
+                        "label": "正高级",
+                        "title": "正高级"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CHECKER_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "符合到期通知规范",
+                        "label": "符合到期通知规范",
+                        "title": "符合到期通知规范"
+                    },
+                    {
+                        "value": "2",
+                        "text": "未符合到期通知规范",
+                        "label": "未符合到期通知规范",
+                        "title": "未符合到期通知规范"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_CDELAY_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "异地开户，在途时间久",
+                        "label": "异地开户，在途时间久",
+                        "title": "异地开户，在途时间久"
+                    },
+                    {
+                        "value": "2",
+                        "text": "营业部开户后遗忘发起流程",
+                        "label": "营业部开户后遗忘发起流程",
+                        "title": "营业部开户后遗忘发起流程"
+                    },
+                    {
+                        "value": "3",
+                        "text": "因客户资料填写、双录、高龄等问题退回",
+                        "label": "因客户资料填写、双录、高龄等问题退回",
+                        "title": "因客户资料填写、双录、高龄等问题退回"
+                    },
+                    {
+                        "value": "4",
+                        "text": "特殊比例申请、大额申请",
+                        "label": "特殊比例申请、大额申请",
+                        "title": "特殊比例申请、大额申请"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CRQUOTA_NOTICE.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "授信变更未征信",
+                        "label": "授信变更未征信",
+                        "title": "授信变更未征信"
+                    },
+                    {
+                        "value": "2",
+                        "text": "征信评级待提交总部",
+                        "label": "征信评级待提交总部",
+                        "title": "征信评级待提交总部"
+                    },
+                    {
+                        "value": "3",
+                        "text": "总部授信审批",
+                        "label": "总部授信审批",
+                        "title": "总部授信审批"
+                    },
+                    {
+                        "value": "4",
+                        "text": "授信审批完成",
+                        "label": "授信审批完成",
+                        "title": "授信审批完成"
+                    },
+                    {
+                        "value": "5",
+                        "text": "授信变更撤销",
+                        "label": "授信变更撤销",
+                        "title": "授信变更撤销"
+                    }
+                ],
+                "rule_conditions": [
+                    {
+                        "value": ">",
+                        "text": "大于",
+                        "label": "大于",
+                        "title": "大于"
+                    },
+                    {
+                        "value": "<",
+                        "text": "小于",
+                        "label": "小于",
+                        "title": "小于"
+                    },
+                    {
+                        "value": "!=",
+                        "text": "不等于",
+                        "label": "不等于",
+                        "title": "不等于"
+                    },
+                    {
+                        "value": "=",
+                        "text": "等于",
+                        "label": "等于",
+                        "title": "等于"
+                    },
+                    {
+                        "value": ">=",
+                        "text": "大于等于",
+                        "label": "大于等于",
+                        "title": "大于等于"
+                    },
+                    {
+                        "value": "<=",
+                        "text": "小于等于",
+                        "label": "小于等于",
+                        "title": "小于等于"
+                    },
+                    {
+                        "value": "LEFT_LIKE",
+                        "text": "左模糊",
+                        "label": "左模糊",
+                        "title": "左模糊"
+                    },
+                    {
+                        "value": "RIGHT_LIKE",
+                        "text": "右模糊",
+                        "label": "右模糊",
+                        "title": "右模糊"
+                    },
+                    {
+                        "value": "LIKE",
+                        "text": "模糊",
+                        "label": "模糊",
+                        "title": "模糊"
+                    },
+                    {
+                        "value": "IN",
+                        "text": "包含",
+                        "label": "包含",
+                        "title": "包含"
+                    },
+                    {
+                        "value": "USE_SQL_RULES",
+                        "text": "自定义SQL表达式",
+                        "label": "自定义SQL表达式",
+                        "title": "自定义SQL表达式"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLINET_ACCOUNT_UNUSE.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "不使用账户，同意调为0",
+                        "label": "不使用账户，同意调为0",
+                        "title": "不使用账户，同意调为0"
+                    },
+                    {
+                        "value": "2",
+                        "text": "后续要继续使用",
+                        "label": "后续要继续使用",
+                        "title": "后续要继续使用"
+                    },
+                    {
+                        "value": "3",
+                        "text": "无人回应，回访失败",
+                        "label": "无人回应，回访失败",
+                        "title": "无人回应，回访失败"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_SECUIPO_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "放弃中签新股",
+                        "label": "放弃中签新股",
+                        "title": "放弃中签新股"
+                    },
+                    {
+                        "value": "2",
+                        "text": "将尽快缴款",
+                        "label": "将尽快缴款",
+                        "title": "将尽快缴款"
+                    },
+                    {
+                        "value": "3",
+                        "text": "客户已知晓，但未明确反馈",
+                        "label": "客户已知晓，但未明确反馈",
+                        "title": "客户已知晓，但未明确反馈"
+                    },
+                    {
+                        "value": "4",
+                        "text": "未取得有效反馈",
+                        "label": "未取得有效反馈",
+                        "title": "未取得有效反馈"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLINET_RISK_LEVEL_CHANAGE.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "高龄客户高资产",
+                        "label": "高龄客户高资产",
+                        "title": "高龄客户高资产"
+                    },
+                    {
+                        "value": "2",
+                        "text": "收到司法冻结",
+                        "label": "收到司法冻结",
+                        "title": "收到司法冻结"
+                    },
+                    {
+                        "value": "3",
+                        "text": "收到协查函（写明具体协查情况）",
+                        "label": "收到协查函（写明具体协查情况）",
+                        "title": "收到协查函（写明具体协查情况）"
+                    },
+                    {
+                        "value": "4",
+                        "text": "其他",
+                        "label": "其他",
+                        "title": "其他"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_SRP.DATA_SOURCE": [
+                    {
+                        "value": "1",
+                        "text": "资讯系统",
+                        "label": "资讯系统",
+                        "title": "资讯系统"
+                    },
+                    {
+                        "value": "2",
+                        "text": "采集系统",
+                        "label": "采集系统",
+                        "title": "采集系统"
+                    },
+                    {
+                        "value": "3",
+                        "text": "系统录入",
+                        "label": "系统录入",
+                        "title": "系统录入"
+                    }
+                ],
+                "ceshi_online": [
+                    {
+                        "value": "00",
+                        "text": "000",
+                        "label": "000",
+                        "title": "000"
+                    },
+                    {
+                        "value": "3",
+                        "text": "easyui",
+                        "label": "easyui",
+                        "title": "easyui"
+                    },
+                    {
+                        "value": "1",
+                        "text": "booostrap",
+                        "label": "booostrap",
+                        "title": "booostrap"
+                    }
+                ],
+                "Z_SHARE_FILE_DOWNLOAD.PREFIX": [
+                    {
+                        "value": "1",
+                        "text": "/sharepledge/free/file/download?file=",
+                        "label": "/sharepledge/free/file/download?file=",
+                        "title": "/sharepledge/free/file/download?file="
+                    }
+                ],
+                "Z_SHARE_PLEDGE_SEMIYEAR.NO": [
+                    {
+                        "value": "1",
+                        "text": "上半年",
+                        "label": "上半年",
+                        "title": "上半年"
+                    },
+                    {
+                        "value": "2",
+                        "text": "下半年",
+                        "label": "下半年",
+                        "title": "下半年"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_SECUIPO_NOTICE.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已缴款",
+                        "label": "已缴款",
+                        "title": "已缴款"
+                    },
+                    {
+                        "value": "2",
+                        "text": "未缴款",
+                        "label": "未缴款",
+                        "title": "未缴款"
+                    }
+                ],
+                "user_type": [
+                    {
+                        "value": "1",
+                        "text": "普通用户",
+                        "label": "普通用户",
+                        "title": "普通用户"
+                    },
+                    {
+                        "value": "2",
+                        "text": "系统管理员",
+                        "label": "系统管理员",
+                        "title": "系统管理员"
+                    },
+                    {
+                        "value": "3",
+                        "text": "外部用户",
+                        "label": "外部用户",
+                        "title": "外部用户"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE.CONFIG_CORP_END": [
+                    {
+                        "value": "9",
+                        "text": "5",
+                        "label": "5",
+                        "title": "5"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE.CONFIG_CRQUOTA_DELAY": [
+                    {
+                        "value": "E",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_HIGH_PER.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "未取得有效联系",
+                        "label": "未取得有效联系",
+                        "title": "未取得有效联系"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已尽到通知服务",
+                        "label": "已尽到通知服务",
+                        "title": "已尽到通知服务"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_NCORP_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户已知晓风险等级不匹配情况，仍要参与融资融券业务，愿意自行承担相应的风险损失；",
+                        "label": "客户已知晓风险等级不匹配情况，仍要参与融资融券业务，愿意自行承担相应的风险损失；",
+                        "title": "客户已知晓风险等级不匹配情况，仍要参与融资融券业务，愿意自行承担相应的风险损失；"
+                    },
+                    {
+                        "value": "2",
+                        "text": "客户已知晓风险等级不匹配情况，不参与融资融券业务，不愿意自行承担相应的风险损失；【后续将取消授信额度】",
+                        "label": "客户已知晓风险等级不匹配情况，不参与融资融券业务，不愿意自行承担相应的风险损失；【后续将取消授信额度】",
+                        "title": "客户已知晓风险等级不匹配情况，不参与融资融券业务，不愿意自行承担相应的风险损失；【后续将取消授信额度】"
+                    },
+                    {
+                        "value": "3",
+                        "text": "风险测评提交有误，客户表示要重新测评;",
+                        "label": "风险测评提交有误，客户表示要重新测评;",
+                        "title": "风险测评提交有误，客户表示要重新测评;"
+                    },
+                    {
+                        "value": "4",
+                        "text": "不是客户本人，未取得有效联系，取消授信额度(三次以上联系客户未果);",
+                        "label": "不是客户本人，未取得有效联系，取消授信额度(三次以上联系客户未果);",
+                        "title": "不是客户本人，未取得有效联系，取消授信额度(三次以上联系客户未果);"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RISKCHECK.STATUS": [
+                    {
+                        "value": "0",
+                        "text": "未提交",
+                        "label": "未提交",
+                        "title": "未提交"
+                    },
+                    {
+                        "value": "1",
+                        "text": "已提交",
+                        "label": "已提交",
+                        "title": "已提交"
+                    },
+                    {
+                        "value": "2",
+                        "text": "审核通过",
+                        "label": "审核通过",
+                        "title": "审核通过"
+                    },
+                    {
+                        "value": "3",
+                        "text": "审核驳回",
+                        "label": "审核驳回",
+                        "title": "审核驳回"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_AGE_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "高龄交易风险相对可控，无需特别处理",
+                        "label": "高龄交易风险相对可控，无需特别处理",
+                        "title": "高龄交易风险相对可控，无需特别处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "建议采取授信额度下调、融资保证金比例上调等措施控制客户杠杆",
+                        "label": "建议采取授信额度下调、融资保证金比例上调等措施控制客户杠杆",
+                        "title": "建议采取授信额度下调、融资保证金比例上调等措施控制客户杠杆"
+                    }
+                ],
+                "tenant_status": [
+                    {
+                        "value": "1",
+                        "text": "正常",
+                        "label": "正常",
+                        "title": "正常"
+                    },
+                    {
+                        "value": "0",
+                        "text": "冻结",
+                        "label": "冻结",
+                        "title": "冻结"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.CONFIG_EXAM_TERM": [
+                    {
+                        "value": "1",
+                        "text": "半年度",
+                        "label": "半年度",
+                        "title": "半年度"
+                    },
+                    {
+                        "value": "2",
+                        "text": "年度",
+                        "label": "年度",
+                        "title": "年度"
+                    }
+                ],
+                "is_open": [
+                    {
+                        "value": "Y",
+                        "text": "是",
+                        "label": "是",
+                        "title": "是"
+                    },
+                    {
+                        "value": "N",
+                        "text": "否",
+                        "label": "否",
+                        "title": "否"
+                    }
+                ],
+                "yes_no": [
+                    {
+                        "value": "1",
+                        "text": "是",
+                        "label": "是",
+                        "title": "是"
+                    },
+                    {
+                        "value": "0",
+                        "text": "否",
+                        "label": "否",
+                        "title": "否"
+                    }
+                ],
+                "org_category": [
+                    {
+                        "value": "3",
+                        "text": "岗位",
+                        "label": "岗位",
+                        "title": "岗位"
+                    },
+                    {
+                        "value": "1",
+                        "text": "公司",
+                        "label": "公司",
+                        "title": "公司"
+                    },
+                    {
+                        "value": "2",
+                        "text": "部门",
+                        "label": "部门",
+                        "title": "部门"
+                    }
+                ],
+                "priority": [
+                    {
+                        "value": "H",
+                        "text": "高",
+                        "label": "高",
+                        "title": "高"
+                    },
+                    {
+                        "value": "M",
+                        "text": "中",
+                        "label": "中",
+                        "title": "中"
+                    },
+                    {
+                        "value": "L",
+                        "text": "低",
+                        "label": "低",
+                        "title": "低"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CONFIG_SPECIAL.USERS": [
+                    {
+                        "value": "0",
+                        "text": "905000217,980700282",
+                        "label": "905000217,980700282",
+                        "title": "905000217,980700282"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_FINANCIER.TYPE": [
+                    {
+                        "value": "1",
+                        "text": "非投资公司",
+                        "label": "非投资公司",
+                        "title": "非投资公司"
+                    },
+                    {
+                        "value": "0",
+                        "text": "投资公司",
+                        "label": "投资公司",
+                        "title": "投资公司"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.COLLECTION_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "付息日收息",
+                        "label": "付息日收息",
+                        "title": "付息日收息"
+                    },
+                    {
+                        "value": "2",
+                        "text": "合约到期",
+                        "label": "合约到期",
+                        "title": "合约到期"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.REPURCHASE_FLAG": [
+                    {
+                        "value": "1",
+                        "text": "在途",
+                        "label": "在途",
+                        "title": "在途"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已购回",
+                        "label": "已购回",
+                        "title": "已购回"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_INTEREST_PERIOD.TYPE": [
+                    {
+                        "value": "1",
+                        "text": "半年结息",
+                        "label": "半年结息",
+                        "title": "半年结息"
+                    },
+                    {
+                        "value": "0",
+                        "text": "季度结息",
+                        "label": "季度结息",
+                        "title": "季度结息"
+                    },
+                    {
+                        "value": "2",
+                        "text": "到期结息",
+                        "label": "到期结息",
+                        "title": "到期结息"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_SRP.IMPORT_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "标的必备条件",
+                        "label": "标的必备条件",
+                        "title": "标的必备条件"
+                    },
+                    {
+                        "value": "2",
+                        "text": "标的负面清单",
+                        "label": "标的负面清单",
+                        "title": "标的负面清单"
+                    },
+                    {
+                        "value": "3",
+                        "text": "标的禁止条件",
+                        "label": "标的禁止条件",
+                        "title": "标的禁止条件"
+                    },
+                    {
+                        "value": "4",
+                        "text": "融入方负面清单",
+                        "label": "融入方负面清单",
+                        "title": "融入方负面清单"
+                    },
+                    {
+                        "value": "5",
+                        "text": "融入方禁止条件",
+                        "label": "融入方禁止条件",
+                        "title": "融入方禁止条件"
+                    },
+                    {
+                        "value": "6",
+                        "text": "细则汇编:交易额度的管理",
+                        "label": "细则汇编:交易额度的管理",
+                        "title": "细则汇编:交易额度的管理"
+                    },
+                    {
+                        "value": "7",
+                        "text": "参考评价结果",
+                        "label": "参考评价结果",
+                        "title": "参考评价结果"
+                    },
+                    {
+                        "value": "8",
+                        "text": "年报参考意见",
+                        "label": "年报参考意见",
+                        "title": "年报参考意见"
+                    },
+                    {
+                        "value": "9",
+                        "text": "三方参与,前置条件",
+                        "label": "三方参与,前置条件",
+                        "title": "三方参与,前置条件"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.EXAM_NEW_PROJECT_FLAG": [
+                    {
+                        "value": "0",
+                        "text": "否",
+                        "label": "否",
+                        "title": "否"
+                    },
+                    {
+                        "value": "1",
+                        "text": "是",
+                        "label": "是",
+                        "title": "是"
+                    }
+                ],
+                "status": [
+                    {
+                        "value": "1",
+                        "text": "正常",
+                        "label": "正常",
+                        "title": "正常"
+                    },
+                    {
+                        "value": "2",
+                        "text": "冻结",
+                        "label": "冻结",
+                        "title": "冻结"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_CORP_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "将尽快进行风险测评处理",
+                        "label": "将尽快进行风险测评处理",
+                        "title": "将尽快进行风险测评处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "不再使用信用账户",
+                        "label": "不再使用信用账户",
+                        "title": "不再使用信用账户"
+                    },
+                    {
+                        "value": "3",
+                        "text": "短期内无法更新",
+                        "label": "短期内无法更新",
+                        "title": "短期内无法更新"
+                    },
+                    {
+                        "value": "4",
+                        "text": "客户已知晓，但未明确反馈；",
+                        "label": "客户已知晓，但未明确反馈；",
+                        "title": "客户已知晓，但未明确反馈；"
+                    },
+                    {
+                        "value": "5",
+                        "text": "未取得有效联系",
+                        "label": "未取得有效联系",
+                        "title": "未取得有效联系"
+                    },
+                    {
+                        "value": "6",
+                        "text": "其他情况",
+                        "label": "其他情况",
+                        "title": "其他情况"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_PROJECT_INTEREST.DAYS": [
+                    {
+                        "value": "365",
+                        "text": "365",
+                        "label": "365",
+                        "title": "365"
+                    },
+                    {
+                        "value": "360",
+                        "text": "360",
+                        "label": "360",
+                        "title": "360"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_LARGE_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已知晓，会择期操作处理",
+                        "label": "已知晓，会择期操作处理",
+                        "title": "已知晓，会择期操作处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已知晓，但未明确后续措施",
+                        "label": "已知晓，但未明确后续措施",
+                        "title": "已知晓，但未明确后续措施"
+                    },
+                    {
+                        "value": "3",
+                        "text": "未取得有效联系",
+                        "label": "未取得有效联系",
+                        "title": "未取得有效联系"
+                    },
+                    {
+                        "value": "4",
+                        "text": "其他反馈说明",
+                        "label": "其他反馈说明",
+                        "title": "其他反馈说明"
+                    }
+                ],
+                "msgType": [
+                    {
+                        "value": "4",
+                        "text": "系统",
+                        "label": "系统",
+                        "title": "系统"
+                    },
+                    {
+                        "value": "1",
+                        "text": "短信",
+                        "label": "短信",
+                        "title": "短信"
+                    },
+                    {
+                        "value": "2",
+                        "text": "邮件",
+                        "label": "邮件",
+                        "title": "邮件"
+                    },
+                    {
+                        "value": "3",
+                        "text": "微信",
+                        "label": "微信",
+                        "title": "微信"
+                    }
+                ],
+                "credit_record_report_adjust_type": [
+                    {
+                        "value": "1",
+                        "text": "增加",
+                        "label": "增加",
+                        "title": "增加"
+                    },
+                    {
+                        "value": "2",
+                        "text": "减少",
+                        "label": "减少",
+                        "title": "减少"
+                    }
+                ],
+                "credit_record_report_business_type": [
+                    {
+                        "value": "2",
+                        "text": "股票质押",
+                        "label": "股票质押",
+                        "title": "股票质押"
+                    },
+                    {
+                        "value": "1",
+                        "text": "融资融券",
+                        "label": "融资融券",
+                        "title": "融资融券"
+                    }
+                ],
+                "created_user_flag": [
+                    {
+                        "value": "1",
+                        "text": "是",
+                        "label": "是",
+                        "title": "是"
+                    },
+                    {
+                        "value": "0",
+                        "text": "否",
+                        "label": "否",
+                        "title": "否"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_MONITOR.CONCLUSION": [
+                    {
+                        "value": "1",
+                        "text": "符合",
+                        "label": "符合",
+                        "title": "符合"
+                    },
+                    {
+                        "value": "2",
+                        "text": "不符合",
+                        "label": "不符合",
+                        "title": "不符合"
+                    },
+                    {
+                        "value": "3",
+                        "text": "无特殊承诺",
+                        "label": "无特殊承诺",
+                        "title": "无特殊承诺"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_PROJECT_SOURCE.TYPE": [
+                    {
+                        "value": "0",
+                        "text": "两融",
+                        "label": "两融",
+                        "title": "两融"
+                    },
+                    {
+                        "value": "1",
+                        "text": "资管",
+                        "label": "资管",
+                        "title": "资管"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_QUOTA_UF.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已在柜台将流程提交总部",
+                        "label": "已在柜台将流程提交总部",
+                        "title": "已在柜台将流程提交总部"
+                    },
+                    {
+                        "value": "2",
+                        "text": "未在柜台将流程提交总部",
+                        "label": "未在柜台将流程提交总部",
+                        "title": "未在柜台将流程提交总部"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_SECUIPO_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已尽到通知服务",
+                        "label": "已尽到通知服务",
+                        "title": "已尽到通知服务"
+                    },
+                    {
+                        "value": "2",
+                        "text": "存在风险隐患，将进一步落实",
+                        "label": "存在风险隐患，将进一步落实",
+                        "title": "存在风险隐患，将进一步落实"
+                    }
+                ],
+                "log_type": [
+                    {
+                        "value": "2",
+                        "text": "操作日志",
+                        "label": "操作日志",
+                        "title": "操作日志"
+                    },
+                    {
+                        "value": "1",
+                        "text": "登录日志",
+                        "label": "登录日志",
+                        "title": "登录日志"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RISK.REDUCELIMIT_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "承诺限售股",
+                        "label": "承诺限售股",
+                        "title": "承诺限售股"
+                    },
+                    {
+                        "value": "2",
+                        "text": "业绩承诺股",
+                        "label": "业绩承诺股",
+                        "title": "业绩承诺股"
+                    },
+                    {
+                        "value": "3",
+                        "text": "其他减持限制",
+                        "label": "其他减持限制",
+                        "title": "其他减持限制"
+                    },
+                    {
+                        "value": "4",
+                        "text": "除股东身份、高管类型、股份来源、限售外不存在其他减持限制",
+                        "label": "除股东身份、高管类型、股份来源、限售外不存在其他减持限制",
+                        "title": "除股东身份、高管类型、股份来源、限售外不存在其他减持限制"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.RISK_INTEREST_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "罚金",
+                        "label": "罚金",
+                        "title": "罚金"
+                    },
+                    {
+                        "value": "2",
+                        "text": "违约金",
+                        "label": "违约金",
+                        "title": "违约金"
+                    },
+                    {
+                        "value": "3",
+                        "text": "赔偿金",
+                        "label": "赔偿金",
+                        "title": "赔偿金"
+                    },
+                    {
+                        "value": "4",
+                        "text": "被逼延期及违约期利息",
+                        "label": "被逼延期及违约期利息",
+                        "title": "被逼延期及违约期利息"
+                    },
+                    {
+                        "value": "5",
+                        "text": "惩罚性利率",
+                        "label": "惩罚性利率",
+                        "title": "惩罚性利率"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_STKPRICE_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已知晓，会择期操作处理",
+                        "label": "已知晓，会择期操作处理",
+                        "title": "已知晓，会择期操作处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已知晓，但未明确后续措施",
+                        "label": "已知晓，但未明确后续措施",
+                        "title": "已知晓，但未明确后续措施"
+                    },
+                    {
+                        "value": "3",
+                        "text": "未取得有效联系",
+                        "label": "未取得有效联系",
+                        "title": "未取得有效联系"
+                    },
+                    {
+                        "value": "4",
+                        "text": "其他反馈说明",
+                        "label": "其他反馈说明",
+                        "title": "其他反馈说明"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_RB_CLIENT.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "暂无风险，已按话术提示",
+                        "label": "暂无风险，已按话术提示",
+                        "title": "暂无风险，已按话术提示"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已按话术提示，可能存在风险隐患，将进一步落实",
+                        "label": "已按话术提示，可能存在风险隐患，将进一步落实",
+                        "title": "已按话术提示，可能存在风险隐患，将进一步落实"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_SRP.MONITOR_JOUR": [
+                    {
+                        "value": "0",
+                        "text": "两融专员处理",
+                        "label": "两融专员处理",
+                        "title": "两融专员处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "总部处理",
+                        "label": "总部处理",
+                        "title": "总部处理"
+                    },
+                    {
+                        "value": "3",
+                        "text": "总部重新处理",
+                        "label": "总部重新处理",
+                        "title": "总部重新处理"
+                    },
+                    {
+                        "value": "4",
+                        "text": "营业部重新处理",
+                        "label": "营业部重新处理",
+                        "title": "营业部重新处理"
+                    },
+                    {
+                        "value": "5",
+                        "text": "合规专员处理",
+                        "label": "合规专员处理",
+                        "title": "合规专员处理"
+                    },
+                    {
+                        "value": "6",
+                        "text": "营业部负责人处理",
+                        "label": "营业部负责人处理",
+                        "title": "营业部负责人处理"
+                    },
+                    {
+                        "value": "7",
+                        "text": "项目主办处理",
+                        "label": "项目主办处理",
+                        "title": "项目主办处理"
+                    },
+                    {
+                        "value": "8",
+                        "text": "持续督导岗处理",
+                        "label": "持续督导岗处理",
+                        "title": "持续督导岗处理"
+                    },
+                    {
+                        "value": "9",
+                        "text": "股权质押经理处理",
+                        "label": "股权质押经理处理",
+                        "title": "股权质押经理处理"
+                    },
+                    {
+                        "value": "10",
+                        "text": "信用合规专员处理",
+                        "label": "信用合规专员处理",
+                        "title": "信用合规专员处理"
+                    },
+                    {
+                        "value": "11",
+                        "text": "信用业务部总经理处理",
+                        "label": "信用业务部总经理处理",
+                        "title": "信用业务部总经理处理"
+                    },
+                    {
+                        "value": "1",
+                        "text": "归档",
+                        "label": "归档",
+                        "title": "归档"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER.CONFIG_ROLE_ID": [
+                    {
+                        "value": "1",
+                        "text": "2049",
+                        "label": "2049",
+                        "title": "2049"
+                    }
+                ],
+                "form_perms_type": [
+                    {
+                        "value": "1",
+                        "text": "可见(未授权不可见)",
+                        "label": "可见(未授权不可见)",
+                        "title": "可见(未授权不可见)"
+                    },
+                    {
+                        "value": "2",
+                        "text": "可编辑(未授权禁用)",
+                        "label": "可编辑(未授权禁用)",
+                        "title": "可编辑(未授权禁用)"
+                    }
+                ],
+                "valid_status": [
+                    {
+                        "value": "0",
+                        "text": "无效",
+                        "label": "无效",
+                        "title": "无效"
+                    },
+                    {
+                        "value": "1",
+                        "text": "有效",
+                        "label": "有效",
+                        "title": "有效"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.STOCK_MARKET": [
+                    {
+                        "value": "1",
+                        "text": "上海",
+                        "label": "上海",
+                        "title": "上海"
+                    },
+                    {
+                        "value": "2",
+                        "text": "深圳",
+                        "label": "深圳",
+                        "title": "深圳"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE.CONFIG_EMAIL": [
+                    {
+                        "value": "1",
+                        "text": "0",
+                        "label": "0",
+                        "title": "0"
+                    },
+                    {
+                        "value": "2",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "3",
+                        "text": "0",
+                        "label": "0",
+                        "title": "0"
+                    },
+                    {
+                        "value": "4",
+                        "text": "0",
+                        "label": "0",
+                        "title": "0"
+                    },
+                    {
+                        "value": "5",
+                        "text": "0",
+                        "label": "0",
+                        "title": "0"
+                    },
+                    {
+                        "value": "6",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "7",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "8",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "9",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "A",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "B",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "C",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "D",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "0",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "E",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "F",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "J",
+                        "text": "5",
+                        "label": "5",
+                        "title": "5"
+                    },
+                    {
+                        "value": "K",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "M",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "N",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "U",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "V",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "L",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "W",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "P",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_NCORP_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户本人，取得有效联系",
+                        "label": "客户本人，取得有效联系",
+                        "title": "客户本人，取得有效联系"
+                    },
+                    {
+                        "value": "2",
+                        "text": "不是客户本人，未取得有效联系",
+                        "label": "不是客户本人，未取得有效联系",
+                        "title": "不是客户本人，未取得有效联系"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_OPERATE.ASSURE_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "担保证券调入",
+                        "label": "担保证券调入",
+                        "title": "担保证券调入"
+                    },
+                    {
+                        "value": "2",
+                        "text": "担保证券调出",
+                        "label": "担保证券调出",
+                        "title": "担保证券调出"
+                    },
+                    {
+                        "value": "3",
+                        "text": "担保证券调整",
+                        "label": "担保证券调整",
+                        "title": "担保证券调整"
+                    },
+                    {
+                        "value": "4",
+                        "text": "担保证券公允价格调整",
+                        "label": "担保证券公允价格调整",
+                        "title": "担保证券公允价格调整"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.EXAM_BRN_PTCPT_MODE": [
+                    {
+                        "value": "1",
+                        "text": "普通",
+                        "label": "普通",
+                        "title": "普通"
+                    },
+                    {
+                        "value": "2",
+                        "text": "超额利息",
+                        "label": "超额利息",
+                        "title": "超额利息"
+                    },
+                    {
+                        "value": "3",
+                        "text": "违约",
+                        "label": "违约",
+                        "title": "违约"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.TASK_STATUS": [
+                    {
+                        "value": "0",
+                        "text": "待下发",
+                        "label": "待下发",
+                        "title": "待下发"
+                    },
+                    {
+                        "value": "1",
+                        "text": "已下发",
+                        "label": "已下发",
+                        "title": "已下发"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已提交",
+                        "label": "已提交",
+                        "title": "已提交"
+                    },
+                    {
+                        "value": "5",
+                        "text": "主办审核通过",
+                        "label": "主办审核通过",
+                        "title": "主办审核通过"
+                    },
+                    {
+                        "value": "6",
+                        "text": "主办审核驳回",
+                        "label": "主办审核驳回",
+                        "title": "主办审核驳回"
+                    },
+                    {
+                        "value": "3",
+                        "text": "合规通过",
+                        "label": "合规通过",
+                        "title": "合规通过"
+                    },
+                    {
+                        "value": "4",
+                        "text": "合规驳回",
+                        "label": "合规驳回",
+                        "title": "合规驳回"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_DATA.SOURCE": [
+                    {
+                        "value": "0",
+                        "text": "系统录入",
+                        "label": "系统录入",
+                        "title": "系统录入"
+                    },
+                    {
+                        "value": "1",
+                        "text": "柜台采集",
+                        "label": "柜台采集",
+                        "title": "柜台采集"
+                    }
+                ],
+                "sex": [
+                    {
+                        "value": "0",
+                        "text": "未知",
+                        "label": "未知",
+                        "title": "未知"
+                    },
+                    {
+                        "value": "1",
+                        "text": "男",
+                        "label": "男",
+                        "title": "男"
+                    },
+                    {
+                        "value": "2",
+                        "text": "女",
+                        "label": "女",
+                        "title": "女"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_APPLY.TYPE": [
+                    {
+                        "value": "1",
+                        "text": "提前延期",
+                        "label": "提前延期",
+                        "title": "提前延期"
+                    },
+                    {
+                        "value": "2",
+                        "text": "利率调整",
+                        "label": "利率调整",
+                        "title": "利率调整"
+                    },
+                    {
+                        "value": "3",
+                        "text": "现金追保",
+                        "label": "现金追保",
+                        "title": "现金追保"
+                    },
+                    {
+                        "value": "4",
+                        "text": "补充质押",
+                        "label": "补充质押",
+                        "title": "补充质押"
+                    },
+                    {
+                        "value": "5",
+                        "text": "部分解押",
+                        "label": "部分解押",
+                        "title": "部分解押"
+                    },
+                    {
+                        "value": "8",
+                        "text": "部分购回",
+                        "label": "部分购回",
+                        "title": "部分购回"
+                    },
+                    {
+                        "value": "a",
+                        "text": "担保",
+                        "label": "担保",
+                        "title": "担保"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_NOTICE.TYPE": [
+                    {
+                        "value": "1",
+                        "text": "到期",
+                        "label": "到期",
+                        "title": "到期"
+                    },
+                    {
+                        "value": "2",
+                        "text": "预警",
+                        "label": "预警",
+                        "title": "预警"
+                    },
+                    {
+                        "value": "3",
+                        "text": "追保",
+                        "label": "追保",
+                        "title": "追保"
+                    }
+                ],
+                "perms_type": [
+                    {
+                        "value": "1",
+                        "text": "显示",
+                        "label": "显示",
+                        "title": "显示"
+                    },
+                    {
+                        "value": "2",
+                        "text": "禁用",
+                        "label": "禁用",
+                        "title": "禁用"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.CONTRACT_JOUR_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "初始交易",
+                        "label": "初始交易",
+                        "title": "初始交易"
+                    },
+                    {
+                        "value": "2",
+                        "text": "本金变动",
+                        "label": "本金变动",
+                        "title": "本金变动"
+                    },
+                    {
+                        "value": "3",
+                        "text": "利率变动",
+                        "label": "利率变动",
+                        "title": "利率变动"
+                    },
+                    {
+                        "value": "4",
+                        "text": "合同延期",
+                        "label": "合同延期",
+                        "title": "合同延期"
+                    },
+                    {
+                        "value": "5",
+                        "text": "利息支付",
+                        "label": "利息支付",
+                        "title": "利息支付"
+                    },
+                    {
+                        "value": "6",
+                        "text": "罚息或其他应付",
+                        "label": "罚息或其他应付",
+                        "title": "罚息或其他应付"
+                    },
+                    {
+                        "value": "19",
+                        "text": "到期日期变动",
+                        "label": "到期日期变动",
+                        "title": "到期日期变动"
+                    },
+                    {
+                        "value": "20",
+                        "text": "承揽人调整",
+                        "label": "承揽人调整",
+                        "title": "承揽人调整"
+                    },
+                    {
+                        "value": "21",
+                        "text": "承做人调整",
+                        "label": "承做人调整",
+                        "title": "承做人调整"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_COMPACT_NOTICE.STATUS": [
+                    {
+                        "value": "0",
+                        "text": "数据生成",
+                        "label": "数据生成",
+                        "title": "数据生成"
+                    },
+                    {
+                        "value": "1",
+                        "text": "任务下发",
+                        "label": "任务下发",
+                        "title": "任务下发"
+                    },
+                    {
+                        "value": "2",
+                        "text": "任务执行",
+                        "label": "任务执行",
+                        "title": "任务执行"
+                    },
+                    {
+                        "value": "3",
+                        "text": "任务审查",
+                        "label": "任务审查",
+                        "title": "任务审查"
+                    },
+                    {
+                        "value": "4",
+                        "text": "异常反馈",
+                        "label": "异常反馈",
+                        "title": "异常反馈"
+                    },
+                    {
+                        "value": "5",
+                        "text": "总部确认",
+                        "label": "总部确认",
+                        "title": "总部确认"
+                    },
+                    {
+                        "value": "6",
+                        "text": "归档",
+                        "label": "归档",
+                        "title": "归档"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_CLAIMADD_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已知晓，会归还负债提高维保",
+                        "label": "已知晓，会归还负债提高维保",
+                        "title": "已知晓，会归还负债提高维保"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已知晓，会转入担保资产提高维保",
+                        "label": "已知晓，会转入担保资产提高维保",
+                        "title": "已知晓，会转入担保资产提高维保"
+                    },
+                    {
+                        "value": "3",
+                        "text": "已知晓，但未明确反馈追保措施",
+                        "label": "已知晓，但未明确反馈追保措施",
+                        "title": "已知晓，但未明确反馈追保措施"
+                    },
+                    {
+                        "value": "4",
+                        "text": "未取得有效反馈",
+                        "label": "未取得有效反馈",
+                        "title": "未取得有效反馈"
+                    },
+                    {
+                        "value": "5",
+                        "text": "其他情况",
+                        "label": "其他情况",
+                        "title": "其他情况"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_LARGE_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户本人，取得有效联系",
+                        "label": "客户本人，取得有效联系",
+                        "title": "客户本人，取得有效联系"
+                    },
+                    {
+                        "value": "2",
+                        "text": "不是客户本人，未取得有效联系",
+                        "label": "不是客户本人，未取得有效联系",
+                        "title": "不是客户本人，未取得有效联系"
+                    }
+                ],
+                "depart_status": [
+                    {
+                        "value": "0",
+                        "text": "不启用",
+                        "label": "不启用",
+                        "title": "不启用"
+                    },
+                    {
+                        "value": "1",
+                        "text": "启用",
+                        "label": "启用",
+                        "title": "启用"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.EXCHANGE_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "初始交易",
+                        "label": "初始交易",
+                        "title": "初始交易"
+                    },
+                    {
+                        "value": "2",
+                        "text": "部分购回",
+                        "label": "部分购回",
+                        "title": "部分购回"
+                    },
+                    {
+                        "value": "3",
+                        "text": "利率调整",
+                        "label": "利率调整",
+                        "title": "利率调整"
+                    },
+                    {
+                        "value": "4",
+                        "text": "延期购回",
+                        "label": "延期购回",
+                        "title": "延期购回"
+                    },
+                    {
+                        "value": "5",
+                        "text": "提前购回",
+                        "label": "提前购回",
+                        "title": "提前购回"
+                    },
+                    {
+                        "value": "6",
+                        "text": "到期购回",
+                        "label": "到期购回",
+                        "title": "到期购回"
+                    },
+                    {
+                        "value": "7",
+                        "text": "实收利息",
+                        "label": "实收利息",
+                        "title": "实收利息"
+                    },
+                    {
+                        "value": "8",
+                        "text": "多收利息并挂账",
+                        "label": "多收利息并挂账",
+                        "title": "多收利息并挂账"
+                    },
+                    {
+                        "value": "9",
+                        "text": "平仓处理",
+                        "label": "平仓处理",
+                        "title": "平仓处理"
+                    },
+                    {
+                        "value": "19",
+                        "text": "到期日期变动",
+                        "label": "到期日期变动",
+                        "title": "到期日期变动"
+                    },
+                    {
+                        "value": "20",
+                        "text": "承揽人调整",
+                        "label": "承揽人调整",
+                        "title": "承揽人调整"
+                    },
+                    {
+                        "value": "21",
+                        "text": "承做人调整",
+                        "label": "承做人调整",
+                        "title": "承做人调整"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户自行处理，风险可控",
+                        "label": "客户自行处理，风险可控",
+                        "title": "客户自行处理，风险可控"
+                    },
+                    {
+                        "value": "2",
+                        "text": "存在风险隐患，将进一步落实",
+                        "label": "存在风险隐患，将进一步落实",
+                        "title": "存在风险隐患，将进一步落实"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RISK.CLIENT_MANAGER_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "非董监高",
+                        "label": "非董监高",
+                        "title": "非董监高"
+                    },
+                    {
+                        "value": "2",
+                        "text": "在任董监高（含任期内离职）",
+                        "label": "在任董监高（含任期内离职）",
+                        "title": "在任董监高（含任期内离职）"
+                    },
+                    {
+                        "value": "3",
+                        "text": "在任董监高的一致行动人",
+                        "label": "在任董监高的一致行动人",
+                        "title": "在任董监高的一致行动人"
+                    },
+                    {
+                        "value": "4",
+                        "text": "董监高离任不满6个月",
+                        "label": "董监高离任不满6个月",
+                        "title": "董监高离任不满6个月"
+                    },
+                    {
+                        "value": "5",
+                        "text": "董监高离任已满6个月未满12个月",
+                        "label": "董监高离任已满6个月未满12个月",
+                        "title": "董监高离任已满6个月未满12个月"
+                    },
+                    {
+                        "value": "6",
+                        "text": "董监高离任已满12个月未满18个月",
+                        "label": "董监高离任已满12个月未满18个月",
+                        "title": "董监高离任已满12个月未满18个月"
+                    },
+                    {
+                        "value": "7",
+                        "text": "董监高离任已满18个月",
+                        "label": "董监高离任已满18个月",
+                        "title": "董监高离任已满18个月"
+                    },
+                    {
+                        "value": "8",
+                        "text": "不确定类型",
+                        "label": "不确定类型",
+                        "title": "不确定类型"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.REPORT_AUDIT_STATUS_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "待提交",
+                        "label": "待提交",
+                        "title": "待提交"
+                    },
+                    {
+                        "value": "2",
+                        "text": "待分支机构审核",
+                        "label": "待分支机构审核",
+                        "title": "待分支机构审核"
+                    },
+                    {
+                        "value": "3",
+                        "text": "待项目主办审核",
+                        "label": "待项目主办审核",
+                        "title": "待项目主办审核"
+                    },
+                    {
+                        "value": "4",
+                        "text": "驳回待重新提交",
+                        "label": "驳回待重新提交",
+                        "title": "驳回待重新提交"
+                    },
+                    {
+                        "value": "5",
+                        "text": "已归档",
+                        "label": "已归档",
+                        "title": "已归档"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_AGE_REMARK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户家属告知已身故",
+                        "label": "客户家属告知已身故",
+                        "title": "客户家属告知已身故"
+                    },
+                    {
+                        "value": "2",
+                        "text": "现场回访客户本人可自行书写、操作",
+                        "label": "现场回访客户本人可自行书写、操作",
+                        "title": "现场回访客户本人可自行书写、操作"
+                    },
+                    {
+                        "value": "3",
+                        "text": "现场回访客户本人无法自行书写或操作",
+                        "label": "现场回访客户本人无法自行书写或操作",
+                        "title": "现场回访客户本人无法自行书写或操作"
+                    },
+                    {
+                        "value": "4",
+                        "text": "电话回访客户流畅回答反馈",
+                        "label": "电话回访客户流畅回答反馈",
+                        "title": "电话回访客户流畅回答反馈"
+                    },
+                    {
+                        "value": "5",
+                        "text": "电话回访疑似非本人或反馈不顺",
+                        "label": "电话回访疑似非本人或反馈不顺",
+                        "title": "电话回访疑似非本人或反馈不顺"
+                    },
+                    {
+                        "value": "6",
+                        "text": "未能成功回访",
+                        "label": "未能成功回访",
+                        "title": "未能成功回访"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLINET_ACCOUNT_PAYOFF.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户拒绝接受联系或无法联系、态度恶劣等",
+                        "label": "客户拒绝接受联系或无法联系、态度恶劣等",
+                        "title": "客户拒绝接受联系或无法联系、态度恶劣等"
+                    },
+                    {
+                        "value": "2",
+                        "text": "保持与公司积极沟通，配合营业部进行平仓等相关操作。",
+                        "label": "保持与公司积极沟通，配合营业部进行平仓等相关操作。",
+                        "title": "保持与公司积极沟通，配合营业部进行平仓等相关操作。"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.TABLE_OPERATE_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "新增",
+                        "label": "新增",
+                        "title": "新增"
+                    },
+                    {
+                        "value": "2",
+                        "text": "修改",
+                        "label": "修改",
+                        "title": "修改"
+                    },
+                    {
+                        "value": "3",
+                        "text": "删除",
+                        "label": "删除",
+                        "title": "删除"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_RISK_LEVEL_CHANAGE.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "调整客户授信额度",
+                        "label": "调整客户授信额度",
+                        "title": "调整客户授信额度"
+                    },
+                    {
+                        "value": "2",
+                        "text": "暂不调整(写明理由)",
+                        "label": "暂不调整(写明理由)",
+                        "title": "暂不调整(写明理由)"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE.CONFIG_CORP_DESC": [
+                    {
+                        "value": "A",
+                        "text": "10",
+                        "label": "10",
+                        "title": "10"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CASHCOMPACT_NOTICE.REMIND_DAYS": [
+                    {
+                        "value": "2",
+                        "text": "1",
+                        "label": "1",
+                        "title": "1"
+                    },
+                    {
+                        "value": "5",
+                        "text": "1",
+                        "label": "1",
+                        "title": "1"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.CLIENT_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "机构客户",
+                        "label": "机构客户",
+                        "title": "机构客户"
+                    },
+                    {
+                        "value": "2",
+                        "text": "个人类型",
+                        "label": "个人类型",
+                        "title": "个人类型"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_INFO_CHANGE_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "客户已完成合同签署",
+                        "label": "客户已完成合同签署",
+                        "title": "客户已完成合同签署"
+                    },
+                    {
+                        "value": "2",
+                        "text": "客户未完成签署，额度调 0，限制展期",
+                        "label": "客户未完成签署，额度调 0，限制展期",
+                        "title": "客户未完成签署，额度调 0，限制展期"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE_FILE_TYPE.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "CC系统",
+                        "label": "CC系统",
+                        "title": "CC系统"
+                    },
+                    {
+                        "value": "2",
+                        "text": "信用业务运营管理系统",
+                        "label": "信用业务运营管理系统",
+                        "title": "信用业务运营管理系统"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_PROJECT.OPERATOR": [
+                    {
+                        "value": "徐光明",
+                        "text": "徐光明",
+                        "label": "徐光明",
+                        "title": "徐光明"
+                    },
+                    {
+                        "value": "褚燕",
+                        "text": "褚燕",
+                        "label": "褚燕",
+                        "title": "褚燕"
+                    },
+                    {
+                        "value": "丁武龙",
+                        "text": "丁武龙",
+                        "label": "丁武龙",
+                        "title": "丁武龙"
+                    },
+                    {
+                        "value": "高剑",
+                        "text": "高剑",
+                        "label": "高剑",
+                        "title": "高剑"
+                    },
+                    {
+                        "value": "王少华",
+                        "text": "王少华",
+                        "label": "王少华",
+                        "title": "王少华"
+                    },
+                    {
+                        "value": "刘阳",
+                        "text": "刘阳",
+                        "label": "刘阳",
+                        "title": "刘阳"
+                    }
+                ],
+                "CRDT_COMPANY_SERVICE_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "代销",
+                        "label": "代销",
+                        "title": "代销"
+                    },
+                    {
+                        "value": "2",
+                        "text": "综合服务",
+                        "label": "综合服务",
+                        "title": "综合服务"
+                    },
+                    {
+                        "value": "3",
+                        "text": "外包",
+                        "label": "外包",
+                        "title": "外包"
+                    },
+                    {
+                        "value": "4",
+                        "text": "经纪",
+                        "label": "经纪",
+                        "title": "经纪"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE.CONFIG": [
+                    {
+                        "value": "1",
+                        "text": "0",
+                        "label": "0",
+                        "title": "0"
+                    },
+                    {
+                        "value": "2",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "3",
+                        "text": "0",
+                        "label": "0",
+                        "title": "0"
+                    },
+                    {
+                        "value": "4",
+                        "text": "1",
+                        "label": "1",
+                        "title": "1"
+                    },
+                    {
+                        "value": "5",
+                        "text": "0",
+                        "label": "0",
+                        "title": "0"
+                    },
+                    {
+                        "value": "6",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "7",
+                        "text": "20",
+                        "label": "20",
+                        "title": "20"
+                    },
+                    {
+                        "value": "8",
+                        "text": "10",
+                        "label": "10",
+                        "title": "10"
+                    },
+                    {
+                        "value": "9",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "A",
+                        "text": "5",
+                        "label": "5",
+                        "title": "5"
+                    },
+                    {
+                        "value": "B",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "C",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "D",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "0",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "E",
+                        "text": "3",
+                        "label": "3",
+                        "title": "3"
+                    },
+                    {
+                        "value": "F",
+                        "text": "2",
+                        "label": "2",
+                        "title": "2"
+                    },
+                    {
+                        "value": "G",
+                        "text": "5",
+                        "label": "5",
+                        "title": "5"
+                    },
+                    {
+                        "value": "J",
+                        "text": "30",
+                        "label": "30",
+                        "title": "30"
+                    },
+                    {
+                        "value": "K",
+                        "text": "7",
+                        "label": "7",
+                        "title": "7"
+                    },
+                    {
+                        "value": "M",
+                        "text": "7",
+                        "label": "7",
+                        "title": "7"
+                    },
+                    {
+                        "value": "N",
+                        "text": "7",
+                        "label": "7",
+                        "title": "7"
+                    },
+                    {
+                        "value": "U",
+                        "text": "7",
+                        "label": "7",
+                        "title": "7"
+                    },
+                    {
+                        "value": "V",
+                        "text": "5",
+                        "label": "5",
+                        "title": "5"
+                    },
+                    {
+                        "value": "L",
+                        "text": "7",
+                        "label": "7",
+                        "title": "7"
+                    },
+                    {
+                        "value": "W",
+                        "text": "7",
+                        "label": "7",
+                        "title": "7"
+                    },
+                    {
+                        "value": "P",
+                        "text": "7",
+                        "label": "7",
+                        "title": "7"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_ACCOUNT_UNUSE.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "回访成功，客户表示不再使用，调整为0",
+                        "label": "回访成功，客户表示不再使用，调整为0",
+                        "title": "回访成功，客户表示不再使用，调整为0"
+                    },
+                    {
+                        "value": "2",
+                        "text": "回访成功，客户表示后续仍要使用，暂不调整",
+                        "label": "回访成功，客户表示后续仍要使用，暂不调整",
+                        "title": "回访成功，客户表示后续仍要使用，暂不调整"
+                    },
+                    {
+                        "value": "3",
+                        "text": "回访失败，调整为0",
+                        "label": "回访失败，调整为0",
+                        "title": "回访失败，调整为0"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.IMPORT_TASK_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "融资人资料收集任务",
+                        "label": "融资人资料收集任务",
+                        "title": "融资人资料收集任务"
+                    },
+                    {
+                        "value": "2",
+                        "text": "担保人资料收集任务",
+                        "label": "担保人资料收集任务",
+                        "title": "担保人资料收集任务"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_INTEREST.NO": [
+                    {
+                        "value": "1",
+                        "text": "第一季度付息",
+                        "label": "第一季度付息",
+                        "title": "第一季度付息"
+                    },
+                    {
+                        "value": "2",
+                        "text": "第二季度付息",
+                        "label": "第二季度付息",
+                        "title": "第二季度付息"
+                    },
+                    {
+                        "value": "3",
+                        "text": "第三季度付息",
+                        "label": "第三季度付息",
+                        "title": "第三季度付息"
+                    },
+                    {
+                        "value": "4",
+                        "text": "第四季度付息",
+                        "label": "第四季度付息",
+                        "title": "第四季度付息"
+                    },
+                    {
+                        "value": "5",
+                        "text": "上半年付息",
+                        "label": "上半年付息",
+                        "title": "上半年付息"
+                    },
+                    {
+                        "value": "6",
+                        "text": "下半年付息",
+                        "label": "下半年付息",
+                        "title": "下半年付息"
+                    },
+                    {
+                        "value": "9",
+                        "text": "到期付息",
+                        "label": "到期付息",
+                        "title": "到期付息"
+                    }
+                ],
+                "del_flag": [
+                    {
+                        "value": "1",
+                        "text": "已删除",
+                        "label": "已删除",
+                        "title": "已删除"
+                    },
+                    {
+                        "value": "0",
+                        "text": "正常",
+                        "label": "正常",
+                        "title": "正常"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "将自行归还负债",
+                        "label": "将自行归还负债",
+                        "title": "将自行归还负债"
+                    },
+                    {
+                        "value": "2",
+                        "text": "将办理展期申请",
+                        "label": "将办理展期申请",
+                        "title": "将办理展期申请"
+                    },
+                    {
+                        "value": "3",
+                        "text": "客户已知晓，但未明确反馈",
+                        "label": "客户已知晓，但未明确反馈",
+                        "title": "客户已知晓，但未明确反馈"
+                    },
+                    {
+                        "value": "4",
+                        "text": "未取得有效反馈",
+                        "label": "未取得有效反馈",
+                        "title": "未取得有效反馈"
+                    },
+                    {
+                        "value": "5",
+                        "text": "不愿还款或展期",
+                        "label": "不愿还款或展期",
+                        "title": "不愿还款或展期"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RECORD.STATUS": [
+                    {
+                        "value": "0",
+                        "text": "未提交复核",
+                        "label": "未提交复核",
+                        "title": "未提交复核"
+                    },
+                    {
+                        "value": "1",
+                        "text": "复核中",
+                        "label": "复核中",
+                        "title": "复核中"
+                    },
+                    {
+                        "value": "2",
+                        "text": "复核通过",
+                        "label": "复核通过",
+                        "title": "复核通过"
+                    },
+                    {
+                        "value": "3",
+                        "text": "复核驳回",
+                        "label": "复核驳回",
+                        "title": "复核驳回"
+                    }
+                ],
+                "cgform_table_type": [
+                    {
+                        "value": "1",
+                        "text": "单表",
+                        "label": "单表",
+                        "title": "单表"
+                    },
+                    {
+                        "value": "2",
+                        "text": "主表",
+                        "label": "主表",
+                        "title": "主表"
+                    },
+                    {
+                        "value": "3",
+                        "text": "附表",
+                        "label": "附表",
+                        "title": "附表"
+                    }
+                ],
+                "msg_category": [
+                    {
+                        "value": "1",
+                        "text": "通知公告",
+                        "label": "通知公告",
+                        "title": "通知公告"
+                    },
+                    {
+                        "value": "2",
+                        "text": "系统消息",
+                        "label": "系统消息",
+                        "title": "系统消息"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_SRP.MONITOR_STATUS": [
+                    {
+                        "value": "0",
+                        "text": "待处两融专员处理",
+                        "label": "待处两融专员处理",
+                        "title": "待处两融专员处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "待总部处理",
+                        "label": "待总部处理",
+                        "title": "待总部处理"
+                    },
+                    {
+                        "value": "3",
+                        "text": "待总部重新处理",
+                        "label": "待总部重新处理",
+                        "title": "待总部重新处理"
+                    },
+                    {
+                        "value": "4",
+                        "text": "待营业部重新处理",
+                        "label": "待营业部重新处理",
+                        "title": "待营业部重新处理"
+                    },
+                    {
+                        "value": "5",
+                        "text": "待合规专员处理",
+                        "label": "待合规专员处理",
+                        "title": "待合规专员处理"
+                    },
+                    {
+                        "value": "6",
+                        "text": "待营业部负责人处理",
+                        "label": "待营业部负责人处理",
+                        "title": "待营业部负责人处理"
+                    },
+                    {
+                        "value": "7",
+                        "text": "待项目主办处理",
+                        "label": "待项目主办处理",
+                        "title": "待项目主办处理"
+                    },
+                    {
+                        "value": "8",
+                        "text": "待持续督导岗处理",
+                        "label": "待持续督导岗处理",
+                        "title": "待持续督导岗处理"
+                    },
+                    {
+                        "value": "9",
+                        "text": "待股权质押经理处理",
+                        "label": "待股权质押经理处理",
+                        "title": "待股权质押经理处理"
+                    },
+                    {
+                        "value": "10",
+                        "text": "待信用合规专员处理",
+                        "label": "待信用合规专员处理",
+                        "title": "待信用合规专员处理"
+                    },
+                    {
+                        "value": "11",
+                        "text": "待信用业务部总经理处理",
+                        "label": "待信用业务部总经理处理",
+                        "title": "待信用业务部总经理处理"
+                    },
+                    {
+                        "value": "1",
+                        "text": "归档",
+                        "label": "归档",
+                        "title": "归档"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.CONFIG_EXAM_PARA": [
+                    {
+                        "value": "1001",
+                        "text": "投保金缴纳比例",
+                        "label": "投保金缴纳比例",
+                        "title": "投保金缴纳比例"
+                    },
+                    {
+                        "value": "1003",
+                        "text": "考核扣减比例",
+                        "label": "考核扣减比例",
+                        "title": "考核扣减比例"
+                    },
+                    {
+                        "value": "1004",
+                        "text": "超额提成比例",
+                        "label": "超额提成比例",
+                        "title": "超额提成比例"
+                    },
+                    {
+                        "value": "1002",
+                        "text": "风险准备金扣减比例",
+                        "label": "风险准备金扣减比例",
+                        "title": "风险准备金扣减比例"
+                    },
+                    {
+                        "value": "1005",
+                        "text": "营业税率",
+                        "label": "营业税率",
+                        "title": "营业税率"
+                    },
+                    {
+                        "value": "1006",
+                        "text": "附加税率",
+                        "label": "附加税率",
+                        "title": "附加税率"
+                    },
+                    {
+                        "value": "1007",
+                        "text": "不含税系数",
+                        "label": "不含税系数",
+                        "title": "不含税系数"
+                    },
+                    {
+                        "value": "1008",
+                        "text": "两融固定资金成本",
+                        "label": "两融固定资金成本",
+                        "title": "两融固定资金成本"
+                    },
+                    {
+                        "value": "1009",
+                        "text": "两融风险计提系数",
+                        "label": "两融风险计提系数",
+                        "title": "两融风险计提系数"
+                    },
+                    {
+                        "value": "1010",
+                        "text": "两融新增客户奖励系数",
+                        "label": "两融新增客户奖励系数",
+                        "title": "两融新增客户奖励系数"
+                    },
+                    {
+                        "value": "1011",
+                        "text": "两融年度经营费用",
+                        "label": "两融年度经营费用",
+                        "title": "两融年度经营费用"
+                    }
+                ],
+                "dict_item_status": [
+                    {
+                        "value": "1",
+                        "text": "启用",
+                        "label": "启用",
+                        "title": "启用"
+                    },
+                    {
+                        "value": "0",
+                        "text": "不启用",
+                        "label": "不启用",
+                        "title": "不启用"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RISK.STOCK_SOURCE_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "股份来源不存在减持限制",
+                        "label": "股份来源不存在减持限制",
+                        "title": "股份来源不存在减持限制"
+                    },
+                    {
+                        "value": "2",
+                        "text": "IPO之前获得的股份",
+                        "label": "IPO之前获得的股份",
+                        "title": "IPO之前获得的股份"
+                    },
+                    {
+                        "value": "3",
+                        "text": "上市后非公开发行获得的股份",
+                        "label": "上市后非公开发行获得的股份",
+                        "title": "上市后非公开发行获得的股份"
+                    },
+                    {
+                        "value": "4",
+                        "text": "通过与大股东或者特定股东大宗交易获得的股份",
+                        "label": "通过与大股东或者特定股东大宗交易获得的股份",
+                        "title": "通过与大股东或者特定股东大宗交易获得的股份"
+                    },
+                    {
+                        "value": "5",
+                        "text": "通过协议转让方式受让股份并导致出让方不再具有大股东身份",
+                        "label": "通过协议转让方式受让股份并导致出让方不再具有大股东身份",
+                        "title": "通过协议转让方式受让股份并导致出让方不再具有大股东身份"
+                    },
+                    {
+                        "value": "6",
+                        "text": "通过协议转让方式受让的公司IPO前发行的股份、上市公司非公开发行的股份",
+                        "label": "通过协议转让方式受让的公司IPO前发行的股份、上市公司非公开发行的股份",
+                        "title": "通过协议转让方式受让的公司IPO前发行的股份、上市公司非公开发行的股份"
+                    },
+                    {
+                        "value": "7",
+                        "text": "国有股",
+                        "label": "国有股",
+                        "title": "国有股"
+                    },
+                    {
+                        "value": "8",
+                        "text": "不确定来源",
+                        "label": "不确定来源",
+                        "title": "不确定来源"
+                    },
+                    {
+                        "value": "9",
+                        "text": "其他受到减持限制的股份来源",
+                        "label": "其他受到减持限制的股份来源",
+                        "title": "其他受到减持限制的股份来源"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_CLAIM_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已知晓，会提高维保",
+                        "label": "已知晓，会提高维保",
+                        "title": "已知晓，会提高维保"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已知晓，但未明确后续措施",
+                        "label": "已知晓，但未明确后续措施",
+                        "title": "已知晓，但未明确后续措施"
+                    },
+                    {
+                        "value": "3",
+                        "text": "未取得有效联系",
+                        "label": "未取得有效联系",
+                        "title": "未取得有效联系"
+                    },
+                    {
+                        "value": "4",
+                        "text": "其他反馈说明2",
+                        "label": "其他反馈说明2",
+                        "title": "其他反馈说明2"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_INTEREST_WAY.TYPE": [
+                    {
+                        "value": "0",
+                        "text": "算头不算尾",
+                        "label": "算头不算尾",
+                        "title": "算头不算尾"
+                    },
+                    {
+                        "value": "1",
+                        "text": "算头又算尾",
+                        "label": "算头又算尾",
+                        "title": "算头又算尾"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.RISK_INTEREST_ADD_TO_EXAM": [
+                    {
+                        "value": "1",
+                        "text": "是",
+                        "label": "是",
+                        "title": "是"
+                    },
+                    {
+                        "value": "0",
+                        "text": "否",
+                        "label": "否",
+                        "title": "否"
+                    },
+                    {
+                        "value": "2",
+                        "text": "未确认",
+                        "label": "未确认",
+                        "title": "未确认"
+                    }
+                ],
+                "msgSendStatus": [
+                    {
+                        "value": "0",
+                        "text": "未发送",
+                        "label": "未发送",
+                        "title": "未发送"
+                    },
+                    {
+                        "value": "1",
+                        "text": "发送成功",
+                        "label": "发送成功",
+                        "title": "发送成功"
+                    },
+                    {
+                        "value": "2",
+                        "text": "发送失败",
+                        "label": "发送失败",
+                        "title": "发送失败"
+                    }
+                ],
+                "msg_type": [
+                    {
+                        "value": "USER",
+                        "text": "指定用户",
+                        "label": "指定用户",
+                        "title": "指定用户"
+                    },
+                    {
+                        "value": "ALL",
+                        "text": "全体用户",
+                        "label": "全体用户",
+                        "title": "全体用户"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_ASSET_FALL.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已尽到通知服务",
+                        "label": "已尽到通知服务",
+                        "title": "已尽到通知服务"
+                    },
+                    {
+                        "value": "2",
+                        "text": "存在风险隐患，将进一步落实",
+                        "label": "存在风险隐患，将进一步落实",
+                        "title": "存在风险隐患，将进一步落实"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_YEAR.NO": [
+                    {
+                        "value": "2011",
+                        "text": "2011",
+                        "label": "2011",
+                        "title": "2011"
+                    },
+                    {
+                        "value": "2012",
+                        "text": "2012",
+                        "label": "2012",
+                        "title": "2012"
+                    },
+                    {
+                        "value": "2013",
+                        "text": "2013",
+                        "label": "2013",
+                        "title": "2013"
+                    },
+                    {
+                        "value": "2014",
+                        "text": "2014",
+                        "label": "2014",
+                        "title": "2014"
+                    },
+                    {
+                        "value": "2015",
+                        "text": "2015",
+                        "label": "2015",
+                        "title": "2015"
+                    },
+                    {
+                        "value": "2016",
+                        "text": "2016",
+                        "label": "2016",
+                        "title": "2016"
+                    },
+                    {
+                        "value": "2017",
+                        "text": "2017",
+                        "label": "2017",
+                        "title": "2017"
+                    },
+                    {
+                        "value": "2018",
+                        "text": "2018",
+                        "label": "2018",
+                        "title": "2018"
+                    },
+                    {
+                        "value": "2019",
+                        "text": "2019",
+                        "label": "2019",
+                        "title": "2019"
+                    },
+                    {
+                        "value": "2020",
+                        "text": "2020",
+                        "label": "2020",
+                        "title": "2020"
+                    },
+                    {
+                        "value": "2021",
+                        "text": "2021",
+                        "label": "2021",
+                        "title": "2021"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLINET_EXPCALL.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "回访成功，客户表示会尽快处理",
+                        "label": "回访成功，客户表示会尽快处理",
+                        "title": "回访成功，客户表示会尽快处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "无人回应，回访失败",
+                        "label": "无人回应，回访失败",
+                        "title": "无人回应，回访失败"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_COMPACT_NOTICE.REMIND_DAYS": [
+                    {
+                        "value": "0",
+                        "text": "1",
+                        "label": "1",
+                        "title": "1"
+                    },
+                    {
+                        "value": "10",
+                        "text": "1",
+                        "label": "1",
+                        "title": "1"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_PROJECT.TYPE": [
+                    {
+                        "value": "2",
+                        "text": "两方",
+                        "label": "两方",
+                        "title": "两方"
+                    },
+                    {
+                        "value": "3",
+                        "text": "三方",
+                        "label": "三方",
+                        "title": "三方"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_EXPCALL.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "回访成功，客户表示会尽快处理",
+                        "label": "回访成功，客户表示会尽快处理",
+                        "title": "回访成功，客户表示会尽快处理"
+                    },
+                    {
+                        "value": "2",
+                        "text": "回访失败",
+                        "label": "回访失败",
+                        "title": "回访失败"
+                    }
+                ],
+                "database_type": [
+                    {
+                        "value": "1",
+                        "text": "MySQL5.5",
+                        "label": "MySQL5.5",
+                        "title": "MySQL5.5"
+                    },
+                    {
+                        "value": "4",
+                        "text": "MYSQL5.7+",
+                        "label": "MYSQL5.7+",
+                        "title": "MYSQL5.7+"
+                    },
+                    {
+                        "value": "2",
+                        "text": "Oracle",
+                        "label": "Oracle",
+                        "title": "Oracle"
+                    },
+                    {
+                        "value": "3",
+                        "text": "SQLServer",
+                        "label": "SQLServer",
+                        "title": "SQLServer"
+                    },
+                    {
+                        "value": "6",
+                        "text": "postgresql",
+                        "label": "postgresql",
+                        "title": "postgresql"
+                    },
+                    {
+                        "value": "5",
+                        "text": "marialDB",
+                        "label": "marialDB",
+                        "title": "marialDB"
+                    },
+                    {
+                        "value": "7",
+                        "text": "达梦",
+                        "label": "达梦",
+                        "title": "达梦"
+                    },
+                    {
+                        "value": "8",
+                        "text": "人大金仓",
+                        "label": "人大金仓",
+                        "title": "人大金仓"
+                    },
+                    {
+                        "value": "9",
+                        "text": "神通",
+                        "label": "神通",
+                        "title": "神通"
+                    },
+                    {
+                        "value": "10",
+                        "text": "SQLite",
+                        "label": "SQLite",
+                        "title": "SQLite"
+                    },
+                    {
+                        "value": "11",
+                        "text": "DB2",
+                        "label": "DB2",
+                        "title": "DB2"
+                    },
+                    {
+                        "value": "12",
+                        "text": "Hsqldb",
+                        "label": "Hsqldb",
+                        "title": "Hsqldb"
+                    },
+                    {
+                        "value": "13",
+                        "text": "Derby",
+                        "label": "Derby",
+                        "title": "Derby"
+                    },
+                    {
+                        "value": "14",
+                        "text": "H2",
+                        "label": "H2",
+                        "title": "H2"
+                    },
+                    {
+                        "value": "15",
+                        "text": "其他数据库",
+                        "label": "其他数据库",
+                        "title": "其他数据库"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_BUSINESS.FLAG": [
+                    {
+                        "value": "9901",
+                        "text": "营业部实际收入",
+                        "label": "营业部实际收入",
+                        "title": "营业部实际收入"
+                    },
+                    {
+                        "value": "9902",
+                        "text": "风险准备金",
+                        "label": "风险准备金",
+                        "title": "风险准备金"
+                    },
+                    {
+                        "value": "9903",
+                        "text": "实际个人奖励金额",
+                        "label": "实际个人奖励金额",
+                        "title": "实际个人奖励金额"
+                    },
+                    {
+                        "value": "9904",
+                        "text": "承做奖励实际发放额",
+                        "label": "承做奖励实际发放额",
+                        "title": "承做奖励实际发放额"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.DIFF_TYPE_CD": [
+                    {
+                        "value": "1",
+                        "text": "客户个人行为",
+                        "label": "客户个人行为",
+                        "title": "客户个人行为"
+                    },
+                    {
+                        "value": "2",
+                        "text": "合同约定",
+                        "label": "合同约定",
+                        "title": "合同约定"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RISK.FILL_STATUS": [
+                    {
+                        "value": "0",
+                        "text": "封存",
+                        "label": "封存",
+                        "title": "封存"
+                    },
+                    {
+                        "value": "1",
+                        "text": "开放",
+                        "label": "开放",
+                        "title": "开放"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_AMOUNTDIFF.STATUS": [
+                    {
+                        "value": "0",
+                        "text": "未提交",
+                        "label": "未提交",
+                        "title": "未提交"
+                    },
+                    {
+                        "value": "1",
+                        "text": "已提交",
+                        "label": "已提交",
+                        "title": "已提交"
+                    },
+                    {
+                        "value": "2",
+                        "text": "审核通过",
+                        "label": "审核通过",
+                        "title": "审核通过"
+                    },
+                    {
+                        "value": "3",
+                        "text": "审核驳回",
+                        "label": "审核驳回",
+                        "title": "审核驳回"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_TRACK_CYCLE.TYPE": [
+                    {
+                        "value": "6",
+                        "text": "6个月",
+                        "label": "6个月",
+                        "title": "6个月"
+                    },
+                    {
+                        "value": "3",
+                        "text": "3个月",
+                        "label": "3个月",
+                        "title": "3个月"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_SRP.QUARTER_STATUS": [
+                    {
+                        "value": "0",
+                        "text": "待提交",
+                        "label": "待提交",
+                        "title": "待提交"
+                    },
+                    {
+                        "value": "1",
+                        "text": "待分支机构审核",
+                        "label": "待分支机构审核",
+                        "title": "待分支机构审核"
+                    },
+                    {
+                        "value": "2",
+                        "text": "待项目主办审核",
+                        "label": "待项目主办审核",
+                        "title": "待项目主办审核"
+                    },
+                    {
+                        "value": "3",
+                        "text": "驳回待重新提交",
+                        "label": "驳回待重新提交",
+                        "title": "驳回待重新提交"
+                    },
+                    {
+                        "value": "4",
+                        "text": "归档",
+                        "label": "归档",
+                        "title": "归档"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_PRPROF_CLIENT.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "暂无风险",
+                        "label": "暂无风险",
+                        "title": "暂无风险"
+                    },
+                    {
+                        "value": "2",
+                        "text": "存在风险隐患，将进一步落实",
+                        "label": "存在风险隐患，将进一步落实",
+                        "title": "存在风险隐患，将进一步落实"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE.TYPE": [
+                    {
+                        "value": "1",
+                        "text": "合约到期",
+                        "label": "合约到期",
+                        "title": "合约到期"
+                    },
+                    {
+                        "value": "2",
+                        "text": "授信变更",
+                        "label": "授信变更",
+                        "title": "授信变更"
+                    },
+                    {
+                        "value": "3",
+                        "text": "中签未缴款",
+                        "label": "中签未缴款",
+                        "title": "中签未缴款"
+                    },
+                    {
+                        "value": "4",
+                        "text": "盘后跌破预警线",
+                        "label": "盘后跌破预警线",
+                        "title": "盘后跌破预警线"
+                    },
+                    {
+                        "value": "5",
+                        "text": "盘中跌破追保线",
+                        "label": "盘中跌破追保线",
+                        "title": "盘中跌破追保线"
+                    },
+                    {
+                        "value": "6",
+                        "text": "证件到期",
+                        "label": "证件到期",
+                        "title": "证件到期"
+                    },
+                    {
+                        "value": "7",
+                        "text": "高龄客户回访",
+                        "label": "高龄客户回访",
+                        "title": "高龄客户回访"
+                    },
+                    {
+                        "value": "8",
+                        "text": "大额融资客户回访",
+                        "label": "大额融资客户回访",
+                        "title": "大额融资客户回访"
+                    },
+                    {
+                        "value": "A",
+                        "text": "风险承受能力大幅下降",
+                        "label": "风险承受能力大幅下降",
+                        "title": "风险承受能力大幅下降"
+                    },
+                    {
+                        "value": "C",
+                        "text": "月度业务动态报告",
+                        "label": "月度业务动态报告",
+                        "title": "月度业务动态报告"
+                    },
+                    {
+                        "value": "0",
+                        "text": "低价股",
+                        "label": "低价股",
+                        "title": "低价股"
+                    },
+                    {
+                        "value": "E",
+                        "text": "信用开户未授信",
+                        "label": "信用开户未授信",
+                        "title": "信用开户未授信"
+                    },
+                    {
+                        "value": "F",
+                        "text": "特殊客户盯市",
+                        "label": "特殊客户盯市",
+                        "title": "特殊客户盯市"
+                    },
+                    {
+                        "value": "G",
+                        "text": "持仓集中度过高",
+                        "label": "持仓集中度过高",
+                        "title": "持仓集中度过高"
+                    },
+                    {
+                        "value": "J",
+                        "text": "账户长期未使用客户",
+                        "label": "账户长期未使用客户",
+                        "title": "账户长期未使用客户"
+                    },
+                    {
+                        "value": "K",
+                        "text": "违约平仓客户",
+                        "label": "违约平仓客户",
+                        "title": "违约平仓客户"
+                    },
+                    {
+                        "value": "M",
+                        "text": "异常回访客户",
+                        "label": "异常回访客户",
+                        "title": "异常回访客户"
+                    },
+                    {
+                        "value": "N",
+                        "text": "维持担保比例下降",
+                        "label": "维持担保比例下降",
+                        "title": "维持担保比例下降"
+                    },
+                    {
+                        "value": "U",
+                        "text": "单票集中度过高客户",
+                        "label": "单票集中度过高客户",
+                        "title": "单票集中度过高客户"
+                    },
+                    {
+                        "value": "V",
+                        "text": "RB客户名单",
+                        "label": "RB客户名单",
+                        "title": "RB客户名单"
+                    },
+                    {
+                        "value": "L",
+                        "text": "私募产品户",
+                        "label": "私募产品户",
+                        "title": "私募产品户"
+                    },
+                    {
+                        "value": "W",
+                        "text": "反洗钱风险等级变化",
+                        "label": "反洗钱风险等级变化",
+                        "title": "反洗钱风险等级变化"
+                    },
+                    {
+                        "value": "P",
+                        "text": "私募产品信用账户明细",
+                        "label": "私募产品信用账户明细",
+                        "title": "私募产品信用账户明细"
+                    },
+                    {
+                        "value": "Z",
+                        "text": "约定融券合约到期",
+                        "label": "约定融券合约到期",
+                        "title": "约定融券合约到期"
+                    },
+                    {
+                        "value": "Q",
+                        "text": "关键信息变更客户",
+                        "label": "关键信息变更客户",
+                        "title": "关键信息变更客户"
+                    },
+                    {
+                        "value": "O",
+                        "text": "疑似RB新增风险客户",
+                        "label": "疑似RB新增风险客户",
+                        "title": "疑似RB新增风险客户"
+                    }
+                ],
+                "send_status": [
+                    {
+                        "value": "0",
+                        "text": "未发布",
+                        "label": "未发布",
+                        "title": "未发布"
+                    },
+                    {
+                        "value": "1",
+                        "text": "已发布",
+                        "label": "已发布",
+                        "title": "已发布"
+                    },
+                    {
+                        "value": "2",
+                        "text": "已撤销",
+                        "label": "已撤销",
+                        "title": "已撤销"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CONFIG_EXP.USERS": [
+                    {
+                        "value": "0",
+                        "text": "901000711,901700709,901100017,906100035",
+                        "label": "901000711,901700709,901100017,906100035",
+                        "title": "901000711,901700709,901100017,906100035"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_QUOTA_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "营业部已签批，同意变更",
+                        "label": "营业部已签批，同意变更",
+                        "title": "营业部已签批，同意变更"
+                    },
+                    {
+                        "value": "2",
+                        "text": "存在一定风险，营业部暂不同意变更",
+                        "label": "存在一定风险，营业部暂不同意变更",
+                        "title": "存在一定风险，营业部暂不同意变更"
+                    },
+                    {
+                        "value": "3",
+                        "text": "已与客户沟通，撤销该变更申请",
+                        "label": "已与客户沟通，撤销该变更申请",
+                        "title": "已与客户沟通，撤销该变更申请"
+                    },
+                    {
+                        "value": "4",
+                        "text": "不符合规定条件，暂不同意变更",
+                        "label": "不符合规定条件，暂不同意变更",
+                        "title": "不符合规定条件，暂不同意变更"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_BOOL.TYPE": [
+                    {
+                        "value": "0",
+                        "text": "否",
+                        "label": "否",
+                        "title": "否"
+                    },
+                    {
+                        "value": "1",
+                        "text": "是",
+                        "label": "是",
+                        "title": "是"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.REPORT_FILE_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "持续管理季报",
+                        "label": "持续管理季报",
+                        "title": "持续管理季报"
+                    },
+                    {
+                        "value": "2",
+                        "text": "资金用途季报",
+                        "label": "资金用途季报",
+                        "title": "资金用途季报"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.CONTRACT_TYPE": [
+                    {
+                        "value": "1",
+                        "text": "股票质押",
+                        "label": "股票质押",
+                        "title": "股票质押"
+                    },
+                    {
+                        "value": "2",
+                        "text": "约定购回",
+                        "label": "约定购回",
+                        "title": "约定购回"
+                    },
+                    {
+                        "value": "3",
+                        "text": "融资融券",
+                        "label": "融资融券",
+                        "title": "融资融券"
+                    }
+                ],
+                "user_status": [
+                    {
+                        "value": "1",
+                        "text": "正常",
+                        "label": "正常",
+                        "title": "正常"
+                    },
+                    {
+                        "value": "2",
+                        "text": "冻结",
+                        "label": "冻结",
+                        "title": "冻结"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_NOTICE_WAY.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "录音电话",
+                        "label": "录音电话",
+                        "title": "录音电话"
+                    },
+                    {
+                        "value": "2",
+                        "text": "微信、QQ",
+                        "label": "微信、QQ",
+                        "title": "微信、QQ"
+                    },
+                    {
+                        "value": "3",
+                        "text": "柜台短信",
+                        "label": "柜台短信",
+                        "title": "柜台短信"
+                    },
+                    {
+                        "value": "4",
+                        "text": "书面通知",
+                        "label": "书面通知",
+                        "title": "书面通知"
+                    }
+                ],
+                "operate_type": [
+                    {
+                        "value": "1",
+                        "text": "查询",
+                        "label": "查询",
+                        "title": "查询"
+                    },
+                    {
+                        "value": "2",
+                        "text": "添加",
+                        "label": "添加",
+                        "title": "添加"
+                    },
+                    {
+                        "value": "3",
+                        "text": "修改",
+                        "label": "修改",
+                        "title": "修改"
+                    },
+                    {
+                        "value": "4",
+                        "text": "删除",
+                        "label": "删除",
+                        "title": "删除"
+                    },
+                    {
+                        "value": "5",
+                        "text": "导入",
+                        "label": "导入",
+                        "title": "导入"
+                    },
+                    {
+                        "value": "6",
+                        "text": "导出",
+                        "label": "导出",
+                        "title": "导出"
+                    }
+                ],
+                "quartz_status": [
+                    {
+                        "value": "0",
+                        "text": "正常",
+                        "label": "正常",
+                        "title": "正常"
+                    },
+                    {
+                        "value": "-1",
+                        "text": "停止",
+                        "label": "停止",
+                        "title": "停止"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.DOC_TYPE": [
+                    {
+                        "value": "11",
+                        "text": "融资人-机构客户",
+                        "label": "融资人-机构客户",
+                        "title": "融资人-机构客户"
+                    },
+                    {
+                        "value": "12",
+                        "text": "融资人-个人客户",
+                        "label": "融资人-个人客户",
+                        "title": "融资人-个人客户"
+                    },
+                    {
+                        "value": "21",
+                        "text": "担保人-机构客户",
+                        "label": "担保人-机构客户",
+                        "title": "担保人-机构客户"
+                    },
+                    {
+                        "value": "22",
+                        "text": "担保人-个人客户",
+                        "label": "担保人-个人客户",
+                        "title": "担保人-个人客户"
+                    }
+                ],
+                "menu_type": [
+                    {
+                        "value": "2",
+                        "text": "按钮权限",
+                        "label": "按钮权限",
+                        "title": "按钮权限"
+                    },
+                    {
+                        "value": "1",
+                        "text": "子菜单",
+                        "label": "子菜单",
+                        "title": "子菜单"
+                    },
+                    {
+                        "value": "0",
+                        "text": "一级菜单",
+                        "label": "一级菜单",
+                        "title": "一级菜单"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_HANDLER_IDEND_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "已尽到通知服务",
+                        "label": "已尽到通知服务",
+                        "title": "已尽到通知服务"
+                    },
+                    {
+                        "value": "2",
+                        "text": "未取得有效联系",
+                        "label": "未取得有效联系",
+                        "title": "未取得有效联系"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.GAR_TYPE": [
+                    {
+                        "value": "0",
+                        "text": "无担保",
+                        "label": "无担保",
+                        "title": "无担保"
+                    },
+                    {
+                        "value": "1",
+                        "text": "企业担保",
+                        "label": "企业担保",
+                        "title": "企业担保"
+                    },
+                    {
+                        "value": "2",
+                        "text": "个人担保",
+                        "label": "个人担保",
+                        "title": "个人担保"
+                    }
+                ],
+                "global_perms_type": [
+                    {
+                        "value": "1",
+                        "text": "可见/可访问(授权后可见/可访问)",
+                        "label": "可见/可访问(授权后可见/可访问)",
+                        "title": "可见/可访问(授权后可见/可访问)"
+                    },
+                    {
+                        "value": "2",
+                        "text": "可编辑(未授权时禁用)",
+                        "label": "可编辑(未授权时禁用)",
+                        "title": "可编辑(未授权时禁用)"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_IDEND_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "将尽快办理证件更新",
+                        "label": "将尽快办理证件更新",
+                        "title": "将尽快办理证件更新"
+                    },
+                    {
+                        "value": "2",
+                        "text": "不再使用信用账户",
+                        "label": "不再使用信用账户",
+                        "title": "不再使用信用账户"
+                    },
+                    {
+                        "value": "3",
+                        "text": "短期内无法更新",
+                        "label": "短期内无法更新",
+                        "title": "短期内无法更新"
+                    },
+                    {
+                        "value": "4",
+                        "text": "客户已知晓，但未明确反馈；",
+                        "label": "客户已知晓，但未明确反馈；",
+                        "title": "客户已知晓，但未明确反馈；"
+                    },
+                    {
+                        "value": "5",
+                        "text": "未取得有效联系",
+                        "label": "未取得有效联系",
+                        "title": "未取得有效联系"
+                    },
+                    {
+                        "value": "6",
+                        "text": "其他情况",
+                        "label": "其他情况",
+                        "title": "其他情况"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CLIENT_AGE_FEEDBACK.STATUS": [
+                    {
+                        "value": "1",
+                        "text": "成功现场回访",
+                        "label": "成功现场回访",
+                        "title": "成功现场回访"
+                    },
+                    {
+                        "value": "2",
+                        "text": "无法现场回访，只能电话回访",
+                        "label": "无法现场回访，只能电话回访",
+                        "title": "无法现场回访，只能电话回访"
+                    },
+                    {
+                        "value": "3",
+                        "text": "未能取得有效联系",
+                        "label": "未能取得有效联系",
+                        "title": "未能取得有效联系"
+                    },
+                    {
+                        "value": "4",
+                        "text": "客户其他反馈说明",
+                        "label": "客户其他反馈说明",
+                        "title": "客户其他反馈说明"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_CONFIG_SPECIAL.CONFIG_EMAIL": [
+                    {
+                        "value": "0",
+                        "text": "zhangquan@stocke.com.cn,zhaoyilin@stocke.com.cn,wangxiaoling@stocke.com.cn",
+                        "label": "zhangquan@stocke.com.cn,zhaoyilin@stocke.com.cn,wangxiaoling@stocke.com.cn",
+                        "title": "zhangquan@stocke.com.cn,zhaoyilin@stocke.com.cn,wangxiaoling@stocke.com.cn"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_OPERATE.ADJUST_REASON": [
+                    {
+                        "value": "1",
+                        "text": "交易所调整",
+                        "label": "交易所调整",
+                        "title": "交易所调整"
+                    },
+                    {
+                        "value": "2",
+                        "text": "公司调整",
+                        "label": "公司调整",
+                        "title": "公司调整"
+                    },
+                    {
+                        "value": "3",
+                        "text": "复牌",
+                        "label": "复牌",
+                        "title": "复牌"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_CRDT_EMAIL_NOTICE.STATUS": [
+                    {
+                        "value": "0",
+                        "text": "1",
+                        "label": "1",
+                        "title": "1"
+                    }
+                ],
+                "Z_SHARE_PLEDGE.REWARD_RULE_YEAR": [
+                    {
+                        "value": "2020",
+                        "text": "2020年",
+                        "label": "2020年",
+                        "title": "2020年"
+                    },
+                    {
+                        "value": "2021",
+                        "text": "2021年",
+                        "label": "2021年",
+                        "title": "2021年"
+                    },
+                    {
+                        "value": "2022",
+                        "text": "2022年",
+                        "label": "2022年",
+                        "title": "2022年"
+                    },
+                    {
+                        "value": "2023",
+                        "text": "2023年",
+                        "label": "2023年",
+                        "title": "2023年"
+                    }
+                ],
+                "Z_SHARE_PLEDGE_RISK.STOCK_PROPERTY": [
+                    {
+                        "value": "00",
+                        "text": "无限售流通股",
+                        "label": "无限售流通股",
+                        "title": "无限售流通股"
+                    },
+                    {
+                        "value": "01",
+                        "text": "首发后限售股",
+                        "label": "首发后限售股",
+                        "title": "首发后限售股"
+                    },
+                    {
+                        "value": "02",
+                        "text": "股权激励限售股",
+                        "label": "股权激励限售股",
+                        "title": "股权激励限售股"
+                    },
+                    {
+                        "value": "05",
+                        "text": "首发前限售股",
+                        "label": "首发前限售股",
+                        "title": "首发前限售股"
+                    },
+                    {
+                        "value": "07",
+                        "text": "非流通股",
+                        "label": "非流通股",
+                        "title": "非流通股"
+                    }
+                ]
+            }
+        },
+        "timestamp": 1706505271976
+    }
+}

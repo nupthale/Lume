@@ -11,6 +11,9 @@
   "scripts": {
     "build": "pnpm -r --if-present build",
     "dev": "pnpm --filter @lume/daemon dev",
+    "dev:app": "node scripts/dev.mjs",
+    "dev:web": "pnpm --dir apps/web/apps/dataQuery dev",
+    "build:web": "pnpm --dir apps/web/apps/dataQuery build",
     "test": "pnpm -r --if-present test",
     "typecheck": "pnpm -r --if-present typecheck",
     "lint": "biome check .",

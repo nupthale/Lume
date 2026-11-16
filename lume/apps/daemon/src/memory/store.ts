@@ -142,6 +142,8 @@ export interface MemoryStore {
   /** appends a message with the next seq; bumps sessions.message_count and updated_at atomically */
   appendMessage(input: AppendMessageInput): MessageRow
   getMessages(sessionId: string, opts?: GetMessagesOptions): MessageRow[]
+  setFeedback(sessionId: string, messageSeq: number, likeType: number): void
+  getFeedback(sessionId: string): Map<number, number>
   /** count of messages with seq > summarized_until_seq (pending summarization) */
   getUnsummarizedCount(sessionId: string): number
   insertFact(input: InsertFactInput): void
@@ -229,6 +231,13 @@ CREATE TABLE IF NOT EXISTS messages (
   name TEXT,
   created_at TEXT NOT NULL,
   PRIMARY KEY (session_id, seq)
+);
+CREATE TABLE IF NOT EXISTS feedback (
+  session_id TEXT NOT NULL,
+  message_seq INTEGER NOT NULL,
+  like_type INTEGER NOT NULL,
+  updated_at TEXT NOT NULL,
+  PRIMARY KEY (session_id, message_seq)
 );
 CREATE TABLE IF NOT EXISTS facts (
   id TEXT PRIMARY KEY,
@@ -464,6 +473,25 @@ export class SqliteStore implements MemoryStore {
       rows.reverse()
     }
     return rows.map(mapMessageRow)
+  }
+
+  setFeedback(sessionId: string, messageSeq: number, likeType: number): void {
+    this.db
+      .prepare(
+        `INSERT INTO feedback (session_id, message_seq, like_type, updated_at)
+         VALUES (?, ?, ?, ?)
+         ON CONFLICT (session_id, message_seq) DO UPDATE SET
+           like_type = excluded.like_type,
+           updated_at = excluded.updated_at`,
+      )
+      .run(sessionId, messageSeq, likeType, new Date().toISOString())
+  }
+
+  getFeedback(sessionId: string): Map<number, number> {
+    const rows = this.db
+      .prepare('SELECT message_seq, like_type FROM feedback WHERE session_id = ?')
+      .all(sessionId) as Array<{ message_seq: number; like_type: number }>
+    return new Map(rows.map((row) => [row.message_seq, row.like_type]))
   }
 
   getUnsummarizedCount(sessionId: string): number {

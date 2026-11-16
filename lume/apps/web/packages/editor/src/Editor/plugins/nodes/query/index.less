@@ -1,0 +1,39 @@
+.doc-query {
+    position: relative;
+
+    margin: 16px 0;
+    padding: 16px 70px 16px 56px;
+
+    background-color: var(--P50);
+    border-radius: 8px;
+}
+
+.doc-query:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    border-radius: inherit;
+    padding: 1px; /* 边框厚度 */
+    background-image: radial-gradient(#FFBE7B, #FE8FB5, #A07CFE, #FE8FB5, #FFBE7B, #A07CFE, #FE8FB5);
+    background-size: 300% 300%;
+
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.doc-query:after {
+    content: '';
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    background-image: url('../../../../../../../apps/dataQuery/src/assets/aiAvatar2.png');
+    background-size: cover;
+}

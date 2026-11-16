@@ -1,0 +1,71 @@
+.ProseMirror {
+    box-sizing: border-box;
+    font-family: "Styrene Display", sans-serif -apple-system,BlinkMacSystemFont,Helvetica Neue,Tahoma,PingFang SC,Microsoft Yahei,Arial,Hiragino Sans GB,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-feature-settings: normal;
+    font-variant-ligatures: no-common-ligatures;
+    font-variant-numeric: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.ProseMirror {
+    line-height: 24px;
+    min-height: 64px;
+    border: none !important;
+    outline: none;
+}
+
+.ProseMirror p.is-editor-empty::before {
+    content: attr(data-placeholder);
+    color: #aaa;
+    font-size: 14px;
+    pointer-events: none;
+    float: left;
+    height: 0;
+}
+
+.ProseMirror-separator {
+    display: inline;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ProseMirror p:first-child, .ProseMirror h1:first-child, .ProseMirror h2:first-child, .ProseMirror h3:first-child, .ProseMirror h4:first-child, .ProseMirror h5:first-child, .ProseMirror h6:first-child {
+    margin-top: 0!important;
+}
+
+// table 选择sell
+.ProseMirror-hideselection {
+    caret-color: transparent;
+}
+
+.ProseMirror-hideselection *::selection {
+    background: transparent;
+}
+
+.ProseMirror.resize-cursor {
+    cursor: ew-resize;
+    cursor: col-resize!important;
+}
+
+.doc-autocomplete-typing {
+    position: relative;
+    color: #aaa;
+}
+
+/* 或者使用属性选择器，如果内容是通过data属性或其他方式设置的 */
+.doc-autocomplete-typing.empty::before {
+    content: '输入分支机构';
+    color: #999;
+    position: absolute;
+    pointer-events: none;
+    left: 8px;
+    cursor: text;
+    white-space: nowrap;
+    user-select: none;
+    pointer-events: none;
+}

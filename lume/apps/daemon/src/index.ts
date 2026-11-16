@@ -25,6 +25,9 @@ Usage:
   lume --mode stream          stream-json skin over stdio (for GUI drivers)
   lume --session <id>         resume the given session (see --list-sessions)
   lume --list-sessions        list stored sessions and exit
+  lume --list-sessions --json list stored sessions as JSON and exit
+  lume --dump-session <id>    dump a session and its messages as JSON and exit
+  lume --feedback <sessionId> <seq> <like>  set message feedback (-1, 0 or 1) and exit
   lume --delete-session <id>  delete a session with its messages, facts and todos
   lume --search <query>       search message contents across all sessions and exit
   lume --version              print version
@@ -49,6 +52,13 @@ class SessionError extends Error {
   }
 }
 
+class MachineQueryError extends Error {
+  constructor(message: string) {
+    super(message)
+    this.name = 'MachineQueryError'
+  }
+}
+
 interface CliArgs {
   mode: 'repl' | 'stream'
   help: boolean
@@ -57,6 +67,12 @@ interface CliArgs {
   session?: string
   /** list stored sessions and exit */
   listSessions: boolean
+  /** format the session listing as JSON */
+  json: boolean
+  /** dump this session as JSON and exit */
+  dumpSession?: string
+  /** set message feedback and exit */
+  feedback?: { sessionId: string; messageSeq: number; likeType: number }
   /** delete this session (with its messages, facts and todos) and exit */
   deleteSession?: string
   /** search message contents across all sessions and exit */
@@ -70,6 +86,9 @@ function parseArgs(argv: string[]): CliArgs {
   let version = false
   let session: string | undefined
   let listSessions = false
+  let json = false
+  let dumpSession: string | undefined
+  let feedback: CliArgs['feedback']
   let deleteSession: string | undefined
   let search: string | undefined
   for (let i = 0; i < args.length; i++) {
@@ -86,6 +105,37 @@ function parseArgs(argv: string[]): CliArgs {
       i++
     } else if (arg === '--list-sessions') {
       listSessions = true
+    } else if (arg === '--json') {
+      json = true
+    } else if (arg === '--dump-session') {
+      const value = args[i + 1]
+      if (value === undefined || value.startsWith('--')) {
+        throw new Error(`--dump-session requires a session id\n\n${USAGE}`)
+      }
+      dumpSession = value
+      i++
+    } else if (arg === '--feedback') {
+      const sessionId = args[i + 1]
+      const seqValue = args[i + 2]
+      const likeValue = args[i + 3]
+      if (
+        sessionId === undefined ||
+        sessionId.startsWith('--') ||
+        seqValue === undefined ||
+        likeValue === undefined
+      ) {
+        throw new Error(`--feedback requires a session id, message seq and like\n\n${USAGE}`)
+      }
+      const messageSeq = Number(seqValue)
+      const likeType = Number(likeValue)
+      if (!Number.isInteger(messageSeq) || messageSeq < 1) {
+        throw new Error(`--feedback message seq must be a positive integer\n\n${USAGE}`)
+      }
+      if (![-1, 0, 1].includes(likeType)) {
+        throw new Error(`--feedback like must be -1, 0 or 1\n\n${USAGE}`)
+      }
+      feedback = { sessionId, messageSeq, likeType }
+      i += 3
     } else if (arg === '--delete-session') {
       const value = args[i + 1]
       if (value === undefined || value.startsWith('--')) {
@@ -108,7 +158,21 @@ function parseArgs(argv: string[]): CliArgs {
       throw new Error(`unknown argument: ${arg}\n\n${USAGE}`)
     }
   }
-  return { mode, help, version, session, listSessions, deleteSession, search }
+  if (json && !listSessions) {
+    throw new Error(`--json requires --list-sessions\n\n${USAGE}`)
+  }
+  return {
+    mode,
+    help,
+    version,
+    session,
+    listSessions,
+    json,
+    dumpSession,
+    feedback,
+    deleteSession,
+    search,
+  }
 }
 
 async function main(): Promise<void> {
@@ -126,7 +190,56 @@ async function main(): Promise<void> {
   if (args.listSessions) {
     const store = new SqliteStore(dbPathFromEnv())
     try {
-      process.stdout.write(formatSessionList(store.listSessions()))
+      const sessions = store.listSessions()
+      if (args.json) {
+        const rows = sessions.map((session) => ({
+          id: session.id,
+          title: session.title,
+          created_at: session.createdAt,
+          updated_at: session.updatedAt,
+          message_count: session.messageCount,
+        }))
+        process.stdout.write(`${JSON.stringify(rows)}\n`)
+      } else {
+        process.stdout.write(formatSessionList(sessions))
+      }
+    } finally {
+      store.close()
+    }
+    return
+  }
+
+  if (args.dumpSession !== undefined) {
+    const store = new SqliteStore(dbPathFromEnv())
+    try {
+      const session = store.getSession(args.dumpSession)
+      if (session === null) {
+        throw new MachineQueryError(`session not found: ${args.dumpSession}`)
+      }
+      const feedback = store.getFeedback(session.id)
+      const dump = {
+        id: session.id,
+        title: session.title,
+        messages: store.getMessages(session.id).map((message) => ({
+          seq: message.seq,
+          role: message.role,
+          content: message.content,
+          like: feedback.get(message.seq) ?? 0,
+        })),
+      }
+      process.stdout.write(`${JSON.stringify(dump)}\n`)
+    } finally {
+      store.close()
+    }
+    return
+  }
+
+  if (args.feedback !== undefined) {
+    const store = new SqliteStore(dbPathFromEnv())
+    try {
+      const { sessionId, messageSeq, likeType } = args.feedback
+      store.setFeedback(sessionId, messageSeq, likeType)
+      process.stdout.write('ok\n')
     } finally {
       store.close()
     }
@@ -275,6 +388,10 @@ function fakeScript(): FakeReply[] {
 }
 
 main().catch((err) => {
+  if (err instanceof MachineQueryError) {
+    process.stderr.write(`lume: ${err.message}\n`)
+    process.exit(1)
+  }
   if (err instanceof ConfigError || err instanceof SessionError) {
     process.stderr.write(`lume: ${err.message}\n`)
     process.exit(2)

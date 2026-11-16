@@ -3,5 +3,36 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
-  "description": "Lume Electron shell (placeholder, implemented in a later phase)"
+  "description": "Lume Electron shell",
+  "main": "main.mjs",
+  "scripts": {
+    "dev": "LUME_WEB_URL=http://localhost:3201 electron .",
+    "start": "electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.lume.client",
+    "productName": "Lume",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.mjs",
+      "preload.cjs",
+      "public/**/*"
+    ],
+    "mac": {
+      "icon": "public/AppIcon.icns"
+    },
+    "win": {
+      "icon": "public/icon.ico"
+    },
+    "linux": {
+      "icon": "public/icon-256.png"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0"
+  }
 }

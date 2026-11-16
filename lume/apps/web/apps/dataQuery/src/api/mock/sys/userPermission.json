@@ -1,0 +1,1301 @@
+{
+    "GET /data-query-api/sys/permission/getUserPermissionByToken": {
+        "success": true,
+        "message": "",
+        "code": 0,
+        "result": {
+            "allAuth": [
+                {
+                    "action": "user:add",
+                    "describe": "添加按钮",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:edit",
+                    "describe": "用户编辑",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:sex",
+                    "describe": "表单性别可见",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:form:birthday",
+                    "describe": "禁用生日字段",
+                    "type": "2",
+                    "status": "1"
+                },
+                {
+                    "action": null,
+                    "describe": "保存测试",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "mtcms:search",
+                    "describe": "权限-证券搜索",
+                    "type": "1",
+                    "status": "1"
+                },
+                {
+                    "action": "user:form:phone",
+                    "describe": "手机号禁用",
+                    "type": "2",
+                    "status": "1"
+                }
+            ],
+            "auth": [],
+            "menu": [
+                {
+                    "redirect": null,
+                    "path": "/dashboard/analysis",
+                    "component": "dashboard/Analysis",
+                    "route": "1",
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "home",
+                        "componentName": "Analysis",
+                        "title": "首页"
+                    },
+                    "name": "dashboard-analysis",
+                    "id": "9502685863ab87f0ad1134142788a385"
+                },
+                {
+                    "redirect": null,
+                    "path": "/workflow",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/workflow/model",
+                            "component": "credit/workflow/model/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "pic-left",
+                                "componentName": "index",
+                                "title": "模型管理"
+                            },
+                            "name": "workflow-model",
+                            "id": "1623487644579700737"
+                        },
+                        {
+                            "path": "/workflow/process",
+                            "component": "credit/workflow/process/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "pic-right",
+                                "componentName": "index",
+                                "title": "流程管理"
+                            },
+                            "name": "workflow-process",
+                            "id": "1623487922319450114"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "drag",
+                        "componentName": "RouteView",
+                        "title": "工作流程"
+                    },
+                    "name": "workflow",
+                    "id": "1623486805330157569"
+                },
+                {
+                    "redirect": null,
+                    "path": "/personalTasks",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/todoTasks",
+                            "component": "credit/workflow/task/todoTasks/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "待办任务"
+                            },
+                            "name": "todoTasks",
+                            "id": "1620954331739906050"
+                        },
+                        {
+                            "path": "/doneTasks",
+                            "component": "credit/workflow/task/doneTasks/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "已办任务"
+                            },
+                            "name": "doneTasks",
+                            "id": "1620972948644749313"
+                        },
+                        {
+                            "path": "/myStartProcess",
+                            "component": "credit/workflow/task/myStartProcess/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "我的发起"
+                            },
+                            "name": "myStartProcess",
+                            "id": "1651478979672649730"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "project",
+                        "componentName": "RouteView",
+                        "title": "个人任务"
+                    },
+                    "name": "personalTasks",
+                    "id": "1620953956553891841"
+                },
+                {
+                    "redirect": null,
+                    "path": "/instance",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/instanceRunning",
+                            "component": "credit/workflow/instance/running/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "radius-setting",
+                                "componentName": "index",
+                                "title": "运行中流程"
+                            },
+                            "name": "instanceRunning",
+                            "id": "1623200045243867137"
+                        },
+                        {
+                            "path": "/instanceFinish",
+                            "component": "credit/workflow/instance/finish/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "check-square",
+                                "componentName": "index",
+                                "title": "已结束流程"
+                            },
+                            "name": "instanceFinish",
+                            "id": "1623205193844301825"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "cluster",
+                        "componentName": "RouteView",
+                        "title": "流程实例"
+                    },
+                    "name": "instance",
+                    "id": "1623198994764980225"
+                },
+                {
+                    "redirect": null,
+                    "path": "/businessMonitor",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/instance/procInstList",
+                            "component": "credit/workflow/instance/procInstList",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "procInstList",
+                                "title": "流程监控"
+                            },
+                            "name": "instance-procInstList",
+                            "id": "1699680896207863810"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "area-chart",
+                        "componentName": "RouteView",
+                        "title": "业务监控"
+                    },
+                    "name": "businessMonitor",
+                    "id": "1699680783518154754"
+                },
+                {
+                    "redirect": null,
+                    "path": "/mtcms",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/marginTrading/data/concentrationGroupSecurityDetails",
+                            "component": "jbt-mtcms/src/views/security/margin-trade-data/components/SecuritiesDetails",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "SecuritiesDetails",
+                                "title": "集中度分组证券动态明细"
+                            },
+                            "name": "marginTrading-data-concentrationGroupSecurityDetails",
+                            "id": "1684073914587541505"
+                        },
+                        {
+                            "path": "/stock/details/:id/:modelCode?",
+                            "component": "jbt-mtcms/src/views/stock/details/index",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "证券详情"
+                            },
+                            "name": "stock-details-@id-@modelCode?",
+                            "id": "1683769831678930946"
+                        },
+                        {
+                            "path": "/marginTrading/data/guarantySecurityDetails",
+                            "component": "jbt-mtcms/src/views/security/margin-trade-data/components/SecuritiesDetails",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "SecuritiesDetails",
+                                "title": "担保证券动态明细"
+                            },
+                            "name": "marginTrading-data-guarantySecurityDetails",
+                            "id": "1684072454376968193"
+                        },
+                        {
+                            "path": "/marginTrading/data/financingSecurityDetails",
+                            "component": "jbt-mtcms/src/views/security/margin-trade-data/components/SecuritiesDetails",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "SecuritiesDetails",
+                                "title": "融资标的动态明细"
+                            },
+                            "name": "marginTrading-data-financingSecurityDetails",
+                            "id": "1684072893597478913"
+                        },
+                        {
+                            "path": "/marginTrading/data/lendingSecurityDetails",
+                            "component": "jbt-mtcms/src/views/security/margin-trade-data/components/SecuritiesDetails",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "SecuritiesDetails",
+                                "title": "融券标的动态明细"
+                            },
+                            "name": "marginTrading-data-lendingSecurityDetails",
+                            "id": "1684073542211653634"
+                        },
+                        {
+                            "path": "/marginTrading/data/ComparisonCoupons",
+                            "component": "jbt-mtcms/src/views/security/margin-trade-data/components/ComparisonCoupons",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "ComparisonCoupons",
+                                "title": "个券同业对比"
+                            },
+                            "name": "marginTrading-data-ComparisonCoupons",
+                            "id": "1683769128470310914"
+                        },
+                        {
+                            "path": "/stock/factorRank",
+                            "component": "jbt-mtcms/src/views/stock/factor-rank/index",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "因子排名"
+                            },
+                            "name": "stock-factorRank",
+                            "id": "1684074883671707650"
+                        },
+                        {
+                            "path": "/secRiskMgt",
+                            "component": "layouts/RouteView",
+                            "route": "1",
+                            "children": [
+                                {
+                                    "path": "/riskEvent/opinion-monitor",
+                                    "component": "jbt-mtcms/src/views/monitor/opinion-monitor/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "舆情监控"
+                                    },
+                                    "name": "riskEvent-opinion-monitor",
+                                    "id": "1706543900518039553"
+                                },
+                                {
+                                    "path": "/riskEvent/companyNotice",
+                                    "component": "jbt-mtcms/src/views/security/company-notice/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "公司公告"
+                                    },
+                                    "name": "riskEvent-companyNotice",
+                                    "id": "1706544167930085377"
+                                },
+                                {
+                                    "path": "/riskEvent/index",
+                                    "component": "jbt-mtcms/src/views/security/risk-event/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "风险事件管理"
+                                    },
+                                    "name": "riskEvent-index",
+                                    "id": "1706544673656946689"
+                                },
+                                {
+                                    "path": "/modelMarginTrade/warning-filter",
+                                    "component": "jbt-mtcms/src/views/monitor/warning-filter/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "证券异动监控"
+                                    },
+                                    "name": "modelMarginTrade-warning-filter",
+                                    "id": "1684032041054162946"
+                                }
+                            ],
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "profile",
+                                "componentName": "RouteView",
+                                "title": "证券风险管理"
+                            },
+                            "name": "secRiskMgt",
+                            "id": "1689088237352009729"
+                        },
+                        {
+                            "path": "/modelMarginTrade/warning-filter/warning-rule",
+                            "component": "jbt-mtcms/src/views/monitor/warning-rule/index",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "预警监控规则"
+                            },
+                            "name": "modelMarginTrade-warning-filter-warning-rule",
+                            "id": "1684033718231887874"
+                        },
+                        {
+                            "path": "/margin-trade-data",
+                            "component": "jbt-mtcms/src/views/security/margin-trade-data/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "profile",
+                                "componentName": "index",
+                                "title": "同业数据分析"
+                            },
+                            "name": "margin-trade-data",
+                            "id": "1683768094749151233"
+                        },
+                        {
+                            "path": "/modelmgm",
+                            "component": "layouts/RouteView\t",
+                            "route": "1",
+                            "children": [
+                                {
+                                    "path": "/modelmanagement/modelToTest/edit/:id",
+                                    "component": "jbt-mtcms/src/views/modelmanagement/model-to-test/components/creat/index",
+                                    "route": "1",
+                                    "hidden": true,
+                                    "meta": {
+                                        "hideMenu": true,
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "编辑回验任务"
+                                    },
+                                    "name": "modelmanagement-modelToTest-edit-@id",
+                                    "id": "1727591311305461761"
+                                },
+                                {
+                                    "path": "/modelmanagement/modelToTest/report/:id",
+                                    "component": "jbt-mtcms/src/views/modelmanagement/model-to-test/components/detail/index",
+                                    "route": "1",
+                                    "hidden": true,
+                                    "meta": {
+                                        "hideMenu": true,
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "回验报告"
+                                    },
+                                    "name": "modelmanagement-modelToTest-report-@id",
+                                    "id": "1727591257326071809"
+                                },
+                                {
+                                    "path": "/modelmanagement/modelToTest/creat",
+                                    "component": "jbt-mtcms/src/views/modelmanagement/model-to-test/components/creat/index",
+                                    "route": "1",
+                                    "hidden": true,
+                                    "meta": {
+                                        "hideMenu": true,
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "新建回验任务"
+                                    },
+                                    "name": "modelmanagement-modelToTest-creat",
+                                    "id": "1727590748871569409"
+                                },
+                                {
+                                    "path": "/modelmanagement/modelconfiguration/modeldetail/:id",
+                                    "component": "jbt-mtcms/src/views/modelmanagement/modeldetail/index",
+                                    "route": "1",
+                                    "hidden": true,
+                                    "meta": {
+                                        "hideMenu": true,
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "模型详情"
+                                    },
+                                    "name": "modelmanagement-modelconfiguration-modeldetail-@id",
+                                    "id": "1700024476881436673"
+                                },
+                                {
+                                    "path": "/modelmanagement/modelconfiguration",
+                                    "component": "jbt-mtcms/src/views/modelmanagement/model-configuration/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "模型配置"
+                                    },
+                                    "name": "modelmanagement-modelconfiguration",
+                                    "id": "1700023733271937025"
+                                },
+                                {
+                                    "path": "/modelmanagement/modelToTest",
+                                    "component": "jbt-mtcms/src/views/modelmanagement/model-to-test/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "模型回验"
+                                    },
+                                    "name": "modelmanagement-modelToTest",
+                                    "id": "1727590481294643202"
+                                }
+                            ],
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "RouteView\t",
+                                "title": "风险模型管理"
+                            },
+                            "name": "modelmgm",
+                            "id": "1700038341581127681"
+                        },
+                        {
+                            "path": "/secBizMgt",
+                            "component": "layouts/RouteView",
+                            "route": "1",
+                            "children": [
+                                {
+                                    "path": "/security/marginTrading",
+                                    "component": "jbt-mtcms/src/views/security/margin-trading/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "融资融券管理"
+                                    },
+                                    "name": "security-marginTrading",
+                                    "id": "1714828749816033281"
+                                },
+                                {
+                                    "path": "/security/guaranteeClassification",
+                                    "component": "jbt-mtcms/src/views/security/guarantee-classification/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "证券分类管理"
+                                    },
+                                    "name": "security-guaranteeClassification",
+                                    "id": "1714828715696676866"
+                                }
+                            ],
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "RouteView",
+                                "title": "证券业务管理"
+                            },
+                            "name": "secBizMgt",
+                            "id": "1714828341156605954"
+                        },
+                        {
+                            "path": "/customer/pressureTest",
+                            "component": "jbt-mtcms/src/views/customer/pressure-test/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "压力测试"
+                            },
+                            "name": "customer-pressureTest",
+                            "id": "1727592020935561217"
+                        },
+                        {
+                            "path": "/modelMarginTrade",
+                            "component": "layouts/RouteView",
+                            "route": "1",
+                            "children": [
+                                {
+                                    "path": "/modelMarginTrade/risk-warning",
+                                    "component": "jbt-mtcms/src/views/monitor/risk-warning/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "风险评级预警"
+                                    },
+                                    "name": "modelMarginTrade-risk-warning",
+                                    "id": "1684030959826890754"
+                                },
+                                {
+                                    "path": "/modelMarginTrade/marginTrade-monitor",
+                                    "component": "jbt-mtcms/src/views/monitor/stock-monitor/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "风险评级监控"
+                                    },
+                                    "name": "modelMarginTrade-marginTrade-monitor",
+                                    "id": "1684031581442330626"
+                                },
+                                {
+                                    "path": "/modelMarginTrade/marginTrade-change",
+                                    "component": "jbt-mtcms/src/views/monitor/stock-monitor/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "风险评级变动"
+                                    },
+                                    "name": "modelMarginTrade-marginTrade-change",
+                                    "id": "1684031009695780866"
+                                }
+                            ],
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "profile",
+                                "componentName": "RouteView",
+                                "title": "金贝塔两融风险评级"
+                            },
+                            "name": "modelMarginTrade",
+                            "id": "1689081841789190145"
+                        },
+                        {
+                            "path": "/modelContratGroup",
+                            "component": "layouts/RouteView",
+                            "route": "1",
+                            "children": [
+                                {
+                                    "path": "/modelContratGroup/risk-warning",
+                                    "component": "jbt-mtcms/src/views/monitor/risk-warning/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "集中度分组预警"
+                                    },
+                                    "name": "modelContratGroup-risk-warning",
+                                    "id": "1684034131878342657"
+                                },
+                                {
+                                    "path": "/modelContratGroup/concentrationGroup-monitor",
+                                    "component": "jbt-mtcms/src/views/monitor/stock-monitor/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "集中度分组监控"
+                                    },
+                                    "name": "modelContratGroup-concentrationGroup-monitor",
+                                    "id": "1684034897727508481"
+                                },
+                                {
+                                    "path": "/modelContratGroup/concentrationGroup-change",
+                                    "component": "jbt-mtcms/src/views/monitor/stock-monitor/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "集中度分组变动"
+                                    },
+                                    "name": "modelContratGroup-concentrationGroup-change",
+                                    "id": "1684034274512654337"
+                                }
+                            ],
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "profile",
+                                "componentName": "RouteView",
+                                "title": "金贝塔集中度分组"
+                            },
+                            "name": "modelContratGroup",
+                            "id": "1689079327874367490"
+                        },
+                        {
+                            "path": "/modelConversionRate",
+                            "component": "layouts/RouteView",
+                            "route": "1",
+                            "children": [
+                                {
+                                    "path": "/modelConversionRate/risk-warning",
+                                    "component": "jbt-mtcms/src/views/monitor/risk-warning/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "折算率预警"
+                                    },
+                                    "name": "modelConversionRate-risk-warning",
+                                    "id": "1684035393155887106"
+                                },
+                                {
+                                    "path": "/modelConversionRate/conversionRate-monitor",
+                                    "component": "jbt-mtcms/src/views/monitor/stock-monitor/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "折算率监控"
+                                    },
+                                    "name": "modelConversionRate-conversionRate-monitor",
+                                    "id": "1684035868268482562"
+                                },
+                                {
+                                    "path": "/modelConversionRate/conversionRate-change",
+                                    "component": "jbt-mtcms/src/views/monitor/stock-monitor/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "折算率变动"
+                                    },
+                                    "name": "modelConversionRate-conversionRate-change",
+                                    "id": "1684035128340115458"
+                                }
+                            ],
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "icon": "profile",
+                                "componentName": "RouteView",
+                                "title": "金贝塔担保券折算率"
+                            },
+                            "name": "modelConversionRate",
+                            "id": "1689083616923500546"
+                        },
+                        {
+                            "path": "/myChoice/index",
+                            "component": "jbt-mtcms/src/views/my-choice/cloud/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "关注池"
+                            },
+                            "name": "myChoice-index",
+                            "id": "1684037201658695682"
+                        },
+                        {
+                            "path": "/customer/pressureTest/editTmpl",
+                            "component": "jbt-mtcms/src/views/customer/pressure-test/EditTmpl",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "EditTmpl",
+                                "title": "编辑压测模板"
+                            },
+                            "name": "customer-pressureTest-editTmpl",
+                            "id": "1727592499393703938"
+                        },
+                        {
+                            "path": "/customer/pressureTest/report/:id",
+                            "component": "jbt-mtcms/src/views/customer/pressure-test/TestReport",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "TestReport",
+                                "title": "压力测试报告"
+                            },
+                            "name": "customer-pressureTest-report-@id",
+                            "id": "1727592926573875202"
+                        },
+                        {
+                            "path": "/customer/pressureTest/edit/:id",
+                            "component": "jbt-mtcms/src/views/customer/pressure-test/CreateTest",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "CreateTest",
+                                "title": "编辑压力测试"
+                            },
+                            "name": "customer-pressureTest-edit-@id",
+                            "id": "1727593688285949954"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "bg-colors",
+                        "componentName": "RouteView",
+                        "title": "担保品管理"
+                    },
+                    "name": "mtcms",
+                    "id": "1683766935767871489"
+                },
+                {
+                    "redirect": null,
+                    "path": "/basicManagement",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/credit/branchLeaderReportList",
+                            "component": "credit/basic/branchLeaderReportList",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "branchLeaderReportList",
+                                "title": "营业部负责人"
+                            },
+                            "name": "credit-branchLeaderReportList",
+                            "id": "1699605658975649793"
+                        },
+                        {
+                            "path": "/isystem/recordEmployeeReport",
+                            "component": "credit/basic/CreditRecordEmployeeReportList",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "CreditRecordEmployeeReportList",
+                                "title": "双录人员报备"
+                            },
+                            "name": "isystem-recordEmployeeReport",
+                            "id": "1547838025966030849"
+                        },
+                        {
+                            "path": "/isystem/professionReport",
+                            "component": "credit/basic/RongzqProfessorReportList",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "RongzqProfessorReportList",
+                                "title": "两融专员报备"
+                            },
+                            "name": "isystem-professionReport",
+                            "id": "1547839251088674817"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "setting",
+                        "componentName": "RouteView",
+                        "title": "基础管理"
+                    },
+                    "name": "basicManagement",
+                    "id": "1547836529312534529"
+                },
+                {
+                    "redirect": null,
+                    "path": "/ifusion",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/credit/customerPortrait",
+                            "component": "credit/liangRong/operateCompact/customerPortrait/index",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "特殊客户画像(总部)"
+                            },
+                            "name": "credit-customerPortrait",
+                            "id": "1721700694713028610"
+                        },
+                        {
+                            "path": "/credit/branchCustomerPortrait",
+                            "component": "credit/liangRong/operateBranchCompact/customerPortrait/index",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "特殊客户画像(营业部)"
+                            },
+                            "name": "credit-branchCustomerPortrait",
+                            "id": "1730144755044175874"
+                        },
+                        {
+                            "path": "/credit/dashboard",
+                            "component": "credit/liangRong/operateDashboard/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "总部运营概览"
+                            },
+                            "name": "credit-dashboard",
+                            "id": "1547832281698930689"
+                        },
+                        {
+                            "path": "/isystem/configuration",
+                            "component": "credit/TestDashboardList",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "TestDashboardList",
+                                "title": "总部运营配置"
+                            },
+                            "name": "isystem-configuration",
+                            "id": "1547832684356308994"
+                        },
+                        {
+                            "path": "/credit/compact",
+                            "component": "credit/liangRong/operateCompact/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "总部通知监控"
+                            },
+                            "name": "credit-compact",
+                            "id": "1547833129145470977"
+                        },
+                        {
+                            "path": "/credit/branchOperateDashboard",
+                            "component": "credit/liangRong/branchOperateDashboard/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "营业部运营监控"
+                            },
+                            "name": "credit-branchOperateDashboard",
+                            "id": "1547833553122496513"
+                        },
+                        {
+                            "path": "/isystem/branchConfiguration",
+                            "component": "credit/TestDashboardList",
+                            "route": "1",
+                            "hidden": true,
+                            "meta": {
+                                "hideMenu": true,
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "TestDashboardList",
+                                "title": "营业部运营配置"
+                            },
+                            "name": "isystem-branchConfiguration",
+                            "id": "1547833863882674178"
+                        },
+                        {
+                            "path": "/credit/branchCompact",
+                            "component": "credit/liangRong/operateBranchCompact/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "营业部通知处理"
+                            },
+                            "name": "credit-branchCompact",
+                            "id": "1547834183438307329"
+                        },
+                        {
+                            "path": "/credit/compactSearch",
+                            "component": "credit/liangRong/compactSearch/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "两融任务下达"
+                            },
+                            "name": "credit-compactSearch",
+                            "id": "1574932188967501825"
+                        },
+                        {
+                            "path": "/credit/txmonitor",
+                            "component": "credit/liangRong/txmonitor/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "五级分类监控"
+                            },
+                            "name": "credit-txmonitor",
+                            "id": "1644177592145469442"
+                        },
+                        {
+                            "path": "/credit/secuConversionRate",
+                            "component": "credit/liangRong/secuConversionRate/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "担保证券折算率"
+                            },
+                            "name": "credit-secuConversionRate",
+                            "id": "1574995787069030401"
+                        },
+                        {
+                            "path": "/credit/secCost",
+                            "component": "credit/secCost/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "券源成本设定"
+                            },
+                            "name": "credit-secCost",
+                            "id": "1712373135136571393"
+                        },
+                        {
+                            "path": "/credit/branchConfiguration",
+                            "component": "credit/liangRong/branchConfiguration/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "营业部运营配置"
+                            },
+                            "name": "credit-branchConfiguration",
+                            "id": "1739821843188895746"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "pay-circle",
+                        "componentName": "RouteView",
+                        "title": "两融运营"
+                    },
+                    "name": "ifusion",
+                    "id": "1547827530072592385"
+                },
+                {
+                    "redirect": null,
+                    "path": "/pledgeManagement",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/pledgeManualAccount",
+                            "component": "credit/pledge/manual/list",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "list",
+                                "title": "质押手工台账"
+                            },
+                            "name": "pledgeManualAccount",
+                            "id": "1633739111967547393"
+                        },
+                        {
+                            "path": "/srpDocReport",
+                            "component": "credit/pledge/srpDocReport/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "质押营业部持续管理季报"
+                            },
+                            "name": "srpDocReport",
+                            "id": "1723878522426609666"
+                        },
+                        {
+                            "path": "/tradeflow",
+                            "component": "credit/pledge/tradeflow/index",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "index",
+                                "title": "交易流水处理"
+                            },
+                            "name": "tradeflow",
+                            "id": "1689511003210694658"
+                        },
+                        {
+                            "path": "/pledgeInterestCalculate",
+                            "component": "credit/pledge/interest/contractInterestList",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": true,
+                                "internalOrExternal": false,
+                                "componentName": "contractInterestList",
+                                "title": "质押利息核对"
+                            },
+                            "name": "pledgeInterestCalculate",
+                            "id": "1582647254113079298"
+                        },
+                        {
+                            "path": "/pledge/appraisal",
+                            "component": "layouts/RouteView",
+                            "route": "1",
+                            "children": [
+                                {
+                                    "path": "/pledge/appraisal/examRiskIncomeCfg",
+                                    "component": "credit/pledge/appraisal/examRiskIncomeCfg/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "风险补偿收入处理"
+                                    },
+                                    "name": "pledge-appraisal-examRiskIncomeCfg",
+                                    "id": "1729661632837701633"
+                                },
+                                {
+                                    "path": "/pledge/appraisal/appraisalParamsConfig",
+                                    "component": "credit/pledge/appraisal/appraisalParamsConfig/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "考核参数配置"
+                                    },
+                                    "name": "pledge-appraisal-appraisalParamsConfig",
+                                    "id": "1593142896993583106"
+                                },
+                                {
+                                    "path": "/pledge/appraisal/contractConfig",
+                                    "component": "credit/pledge/appraisal/contractConfig/configList",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "configList",
+                                        "title": "项目参数配置"
+                                    },
+                                    "name": "pledge-appraisal-contractConfig",
+                                    "id": "1593143715762323458"
+                                },
+                                {
+                                    "path": "/pledge/appraisal/appraisalInfoQuery",
+                                    "component": "credit/pledge/appraisal/appraisalInfoQuery/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "质押考核台账（两方）"
+                                    },
+                                    "name": "pledge-appraisal-appraisalInfoQuery",
+                                    "id": "1593165333179973633"
+                                },
+                                {
+                                    "path": "/pledge/appraisalTrd/appraisalInfoQuery",
+                                    "component": "credit/pledge/appraisalTrd/appraisalInfoQuery/index",
+                                    "route": "1",
+                                    "meta": {
+                                        "keepAlive": false,
+                                        "internalOrExternal": false,
+                                        "componentName": "index",
+                                        "title": "质押考核台账（三方）"
+                                    },
+                                    "name": "pledge-appraisalTrd-appraisalInfoQuery",
+                                    "id": "1687006619226652673"
+                                }
+                            ],
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "RouteView",
+                                "title": "质押业务考核"
+                            },
+                            "name": "pledge-appraisal",
+                            "id": "1593141791458934785"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "money-collect",
+                        "componentName": "RouteView",
+                        "title": "股票质押"
+                    },
+                    "name": "pledgeManagement",
+                    "id": "1582645905870835714"
+                },
+                {
+                    "redirect": null,
+                    "path": "/secGrp",
+                    "component": "layouts/RouteView",
+                    "route": "1",
+                    "children": [
+                        {
+                            "path": "/secGrp/warningList",
+                            "component": "credit/secGrp/warningList",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "warningList",
+                                "title": "信用证券分类设置"
+                            },
+                            "name": "secGrp-warningList",
+                            "id": "1636631540139876353"
+                        },
+                        {
+                            "path": "/secGrp/grpReason",
+                            "component": "credit/secGrp/grpReason",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "grpReason",
+                                "title": "DF分类原因查询"
+                            },
+                            "name": "secGrp-grpReason",
+                            "id": "1638459316719378434"
+                        },
+                        {
+                            "path": "/secGrp/bopOpenCheckBook",
+                            "component": "credit/secGrp/bopOpenCheckBook",
+                            "route": "1",
+                            "meta": {
+                                "keepAlive": false,
+                                "internalOrExternal": false,
+                                "componentName": "bopOpenCheckBook",
+                                "title": "BOP开户复核台账稽查"
+                            },
+                            "name": "secGrp-bopOpenCheckBook",
+                            "id": "1646326642189852674"
+                        }
+                    ],
+                    "meta": {
+                        "keepAlive": false,
+                        "internalOrExternal": false,
+                        "icon": "eye",
+                        "componentName": "RouteView",
+                        "title": "两融效能专项"
+                    },
+                    "name": "secGrp",
+                    "id": "1636631579971854338"
+                }
+            ],
+            "sysSafeMode": false
+        },
+        "timestamp": 1706505325178
+    }
+}
